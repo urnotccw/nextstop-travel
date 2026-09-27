@@ -1,6 +1,10 @@
 # 下一站 · 飞镖旅行
 
-公开访问：[打开旅行网站](https://urnotccw.github.io/nextstop-travel/)。这个 GitHub Pages 链接会跳转到完整运行站，以便地图、行程生成和多人房间共用同一个服务端与数据库。GitHub 仓库保留前端、服务端源码和[界面原型](https://urnotccw.github.io/nextstop-travel/prototype.html)。GitHub Pages 本身只托管静态文件，不能运行房间数据库和行程接口。
+公开访问：[打开 GitHub Pages 选城网站](https://urnotccw.github.io/nextstop-travel/)。此公开版本直接从 GitHub Pages 加载，不跳转到其他站点。可以浏览与缩放地图、搜索城市、按省筛选、随机抽选，并把喜欢的城市保存在自己的浏览器中。它不需要登录或后端；收藏不会在不同设备、不同朋友之间同步。
+
+应用户要求，公开版暂时只保留选城功能。仓库仍保留此前的完整应用源码与[界面原型](https://urnotccw.github.io/nextstop-travel/prototype.html)，下文记录完整应用的原有能力与开发方式；这些行程、房间和查价功能不属于当前 GitHub Pages 首页。
+
+## 完整应用的历史开发说明
 
 手机（iPhone 15 Pro / 393 × 852，兼容 320px 以上）与桌面双布局，可在顶部切换。
 

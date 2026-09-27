@@ -2,61 +2,58 @@
 <html lang="zh-CN">
 <head>
   <base href="./public/">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6df83">
-  <meta name="description" content="扔个飞镖，发现下一站。把心动的城市放入候选，和朋友一起安排一个好周末。">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <title>下一站 · 飞镖旅行</title>
-  <script>window.NEXTSTOP_API_BASE=location.hostname==='urnotccw.github.io'?'https://dart-trip-weekend-27113.urnotccw1.chatgpt.site':'';</script>
+  <meta name="description" content="在地图上发现下一站，搜索城市、扔个飞镖，把心动的目的地收进旅行清单。">
+  <title>下一站 · 地图选城</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23efd36c'/%3E%3Cpath d='M8 8L25 14L17 17L14 25Z' fill='%235d4b20'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="desktop.css">
-  <link rel="stylesheet" href="cream.css">
-  <link rel="stylesheet" href="room-design.css">
+  <link rel="stylesheet" href="city-only.css">
   <script defer src="assets/d3.min.js"></script>
-  <script defer src="assets/lucide.min.js"></script>
   <script defer src="data.js"></script>
   <script defer src="assets/city-directory.js"></script>
   <script defer src="assets/city-highlights-data.js"></script>
-  <script defer src="dart-picker.js"></script>
-  <script defer src="itinerary-details.js"></script>
-  <script defer src="plan-state.js"></script>
-  <script defer src="plan-features.js"></script>
-  <script defer src="room-tools.js"></script>
-  <script defer src="rooms.js"></script>
-  <script defer src="city-highlights.js"></script>
-  <script defer src="trip-chat.js"></script>
-  <script defer src="app.js"></script>
-  <link rel="stylesheet" href="room-tools.css">
-  <link rel="stylesheet" href="room-tool-objects.css">
-  <link rel="stylesheet" href="room-tool-empty.css">
-  <link rel="stylesheet" href="room-ledger-compact.css">
-  <link rel="stylesheet" href="room-lobby.css">
-  <link rel="stylesheet" href="room-plan-label.css">
-  <link rel="stylesheet" href="room-member-stamps.css">
-  <link rel="stylesheet" href="room-candidate-refresh.css">
-  <link rel="stylesheet" href="room-itinerary-folder.css">
-  <link rel="stylesheet" href="room-vote-ticket.css">
-  <link rel="stylesheet" href="personal-journal.css">
-  <link rel="stylesheet" href="room-invite.css">
-  <link rel="stylesheet" href="travel-forms.css">
+  <script defer src="city-only.js"></script>
 </head>
 <body>
-  <div class="phone">
-    <header class="app-header">
-      <button class="brand" data-action="navigate" data-value="map" aria-label="下一站，返回地图"><span class="brand-mark"><i data-lucide="navigation"></i></span><span>下一站</span></button>
-      <div class="header-right"><button class="demo-badge" data-action="about">体验版</button><button class="friends-btn" data-action="friends"><i data-lucide="users-round"></i><span id="group-label">和朋友一起</span></button></div>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="下一站，返回首页"><span class="brand-mark">↗</span><strong>下一站</strong></a>
+      <span class="header-note">给好奇心一张单程票</span>
+      <a class="header-saved" href="#saved" id="saved-link">心动城市 <span id="saved-count">0</span></a>
     </header>
-    <main id="main" class="main" tabindex="-1"></main>
-    <nav class="tabbar" aria-label="主导航">
-      <button data-action="navigate" data-value="map" class="tab active" aria-current="page"><i data-lucide="compass"></i><span>地图选城</span></button>
-      <button data-action="navigate" data-value="pool" class="tab"><span class="nav-icon"><i data-lucide="heart"></i><b id="pool-count" hidden>0</b></span><span>候选城市</span></button>
-      <button data-action="navigate" data-value="plan" class="tab"><i data-lucide="route"></i><span>我的行程</span></button>
-    </nav>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">NEXT STOP / CITY DISCOVERY</p>
+          <h1 id="hero-title">下一站，<br><em>去哪儿？</em></h1>
+          <p class="hero-lead">放大地图，找一座想去的城市。<br>也可以扔个飞镖，把选择交给好奇心。</p>
+          <button class="primary-action" id="throw-button" type="button"><span class="action-icon">➤</span>扔个飞镖 <span aria-hidden="true">↗</span></button>
+          <p class="hero-foot">50 座配图城市参与随机抽选 · 搜索可查看更多目的地</p>
+        </div>
+        <div class="hero-stamp" aria-hidden="true"><span>TRAVEL<br>NOTE</span><img src="assets/anan-siamese-travel.png" alt=""></div>
+      </section>
+
+      <section class="explorer" aria-label="地图与城市搜索">
+        <div class="map-card">
+          <div class="section-heading"><div><p class="eyebrow">01 / EXPLORE THE MAP</p><h2>在地图上，找个方向</h2></div><span class="map-hint">拖动地图 · 滚轮缩放 · 点击城市</span></div>
+          <div class="map-stage" id="map-stage"><svg id="china-map" role="img" aria-label="中国地图，可点击城市标记"></svg><div class="map-compass" aria-hidden="true">N<br>✧</div><div class="map-controls" role="group" aria-label="地图缩放"><button id="zoom-in" aria-label="放大地图">＋</button><button id="zoom-out" aria-label="缩小地图">－</button><button id="zoom-reset" aria-label="重置地图">⌗</button></div><div class="map-caption">CHINA · 下一站地图</div></div>
+        </div>
+        <aside class="search-card" aria-labelledby="search-title">
+          <div class="ticket-top"><span>DESTINATION TICKET</span><span>NO. 001</span></div>
+          <div class="search-inner"><p class="eyebrow">02 / PICK A CITY</p><h2 id="search-title">有想去的地方？</h2><p class="search-note">输入城市名，或者按省份慢慢看。</p>
+            <label for="city-search" class="input-label">搜索城市</label><div class="search-field"><span aria-hidden="true">⌕</span><input id="city-search" type="search" autocomplete="off" placeholder="例如：长沙、丽江、苏州"></div>
+            <label for="province-filter" class="input-label">按省份筛选</label><select id="province-filter"><option value="">全国城市</option></select>
+            <div class="result-heading"><strong id="result-title">先认识这几座城</strong><span id="result-count"></span></div><div id="city-results" class="city-results" aria-live="polite"></div>
+          </div><div class="ticket-bottom"><span>LOOK AROUND, STAY CURIOUS</span><span class="ticket-barcode" aria-hidden="true"></span></div>
+        </aside>
+      </section>
+
+      <section class="saved-section" id="saved" aria-labelledby="saved-title"><div class="saved-heading"><div><p class="eyebrow">03 / YOUR SHORTLIST</p><h2 id="saved-title">心动的，先留下</h2></div><p>收藏只保存在当前浏览器里，随时可以回来继续选。</p></div><div id="saved-cities" class="saved-cities"></div></section>
+    </main>
+    <footer><span>下一站 · 地图选城</span><a href="credits.html" target="_blank" rel="noreferrer">图片与地图素材来源 ↗</a></footer>
   </div>
-  <dialog id="sheet" aria-labelledby="sheet-title"><div id="sheet-content"></div></dialog>
+  <dialog id="city-dialog" aria-labelledby="dialog-title"><button id="dialog-close" class="dialog-close" aria-label="关闭">×</button><div id="dialog-content"></div></dialog>
   <div id="toast" role="status" aria-live="polite"></div>
-  <noscript>请启用 JavaScript 以体验飞镖选城和行程编辑。</noscript>
 </body>
 </html>
