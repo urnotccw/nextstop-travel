@@ -1,0 +1,86 @@
+/* A room ballot reads like a destination ticket with three clearly separated vote lanes. */
+dialog.vote-ticket-sheet,
+body[data-layout=web] dialog.vote-ticket-sheet{width:min(1600px,calc(100vw - 32px));max-width:1600px;height:min(790px,92dvh);max-height:92dvh;border:0;border-radius:25px;background:#fffdf7;overflow:hidden}
+.vote-ticket-sheet.with-trip-chat[open],body[data-layout=web] dialog.vote-ticket-sheet.with-trip-chat[open]{display:grid;grid-template-columns:minmax(0,1fr) 310px;width:min(1600px,calc(100vw - 32px));max-width:1600px;height:min(790px,92dvh);max-height:92dvh}
+.vote-ticket-sheet #sheet-content{position:relative;min-width:0;min-height:0;height:100%;display:flex;flex-direction:column;overflow:hidden;background:#fffdf7}
+.vote-ticket-sheet .sheet-handle{display:none}
+.vote-ticket-sheet .sheet-header{position:absolute;z-index:3;top:19px;right:25px;padding:0;pointer-events:none}
+.vote-ticket-sheet .sheet-header h2{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.vote-ticket-sheet .sheet-header .close-btn{pointer-events:auto;width:40px;min-height:40px;background:#f4efdc;color:#706b5a}
+.vote-ticket-sheet .sheet-body{flex:1;min-height:0;padding:25px 35px 0;overflow:auto;scrollbar-width:thin;background:#fffdf7}
+.ballot-page{max-width:1218px;margin:0 auto;color:#263c4b}
+.ballot-top{margin:0 75px 18px 0;min-height:50px}
+.ballot-kicker{font-size:11px;letter-spacing:.17em;font-weight:800;color:#78837e}
+.ballot-top h3{margin:5px 0 0;font-size:28px;line-height:1.2;letter-spacing:-.03em;color:#253c4e}
+.ballot-city-nav{position:absolute;z-index:3;right:20px;bottom:19px;display:grid;grid-template-columns:minmax(0,1fr) 80px minmax(0,1fr);align-items:center;width:min(420px,calc(100% - 300px));min-height:67px;padding:5px;border-radius:14px;background:#fffdf5;color:#263d4e;box-shadow:0 9px 25px #0d203857}
+.ballot-city-nav button{display:flex;align-items:center;justify-content:center;gap:7px;min-width:0;min-height:55px;padding:5px 9px;border-radius:9px;color:#27495d;text-align:left;transition:background .18s,transform .18s}
+.ballot-city-nav button:last-child{text-align:right}
+.ballot-city-nav button:hover:not(:disabled){background:#f7e5a2;transform:translateY(-1px)}
+.ballot-city-nav button:disabled{opacity:.4;cursor:default}
+.ballot-city-nav button svg{flex:none;width:19px;height:19px}
+.ballot-city-nav button span{display:flex;flex-direction:column;min-width:0}
+.ballot-city-nav button small{color:#87775b;font-size:10px;font-weight:700}
+.ballot-city-nav button b{overflow:hidden;max-width:8ch;text-overflow:ellipsis;white-space:nowrap;font-size:15px}
+.ballot-city-counter{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:43px;border-left:1px solid #e8dcc0;border-right:1px solid #e8dcc0;line-height:1.1}
+.ballot-city-counter small{color:#867a64;font-size:10px}
+.ballot-city-counter strong{margin-top:4px;color:#2a5367;font-size:17px}
+.ballot-city-counter em{color:#8b897e;font-size:10px;font-style:normal}
+.ballot-ticket{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 208px;grid-template-rows:minmax(0,1fr);height:223px;border-radius:18px;overflow:hidden;background:#1b3547;box-shadow:0 11px 27px #27425322}
+.ballot-ticket:before,.ballot-ticket:after{content:"";position:absolute;z-index:2;left:calc(100% - 208px);width:22px;height:22px;transform:translateX(-50%);background:#fffdf7;border-radius:50%}
+.ballot-ticket:before{top:-11px}.ballot-ticket:after{bottom:-11px}
+.ballot-ticket-photo{position:relative;min-height:0;background:linear-gradient(120deg,#143146,#446b80);overflow:hidden}
+.ballot-ticket-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 48%;filter:brightness(.75) saturate(.95)}
+.ballot-ticket-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0b2136d9,#0b213642 68%,transparent)}
+.ballot-ticket-copy{position:absolute;z-index:1;inset:26px auto 24px 31px;display:flex;flex-direction:column;align-items:start;color:#fff}
+.ballot-ticket-copy small{font-size:12px;letter-spacing:.04em;color:#e5eef0}
+.ballot-ticket-copy strong{display:block;font-size:clamp(38px,5vw,58px);letter-spacing:-.055em;line-height:1.05;margin-top:17px}
+.ballot-ticket-copy span{font-size:12px;color:#f1dea6;margin-top:auto}
+.ballot-ticket-stub{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:0;padding:24px 22px;background:#f2d16c;color:#59451b}
+.ballot-ticket-stub:before{content:"";position:absolute;left:0;top:0;bottom:0;border-left:2px dashed #95733483}
+.ballot-ticket-stub>small{font-size:11px;font-weight:800;letter-spacing:.15em}
+.ballot-ticket-stub>div strong{display:block;font-size:36px;line-height:1;white-space:nowrap}
+.ballot-ticket-stub>div span{font-size:12px}
+.ballot-barcode{display:block;width:100%;height:26px;background:repeating-linear-gradient(90deg,#44351a 0 3px,transparent 3px 5px,#44351a 5px 6px,transparent 6px 9px,#44351a 9px 13px,transparent 13px 16px);opacity:.8}
+.ballot-main{display:grid;grid-template-columns:minmax(0,1fr) 318px;gap:20px;margin-top:20px}
+.ballot-board,.ballot-mine{min-width:0;border-radius:18px;border:1px solid #e7dfcd}
+.ballot-board{padding:17px 17px 14px;background:#fff}
+.ballot-board header{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:12px}
+.ballot-board h4,.ballot-mine h4{margin:0;color:#294454;font-size:17px}
+.ballot-board header span{font-size:12px;color:#7b888d}
+.ballot-lanes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.ballot-lane{position:relative;display:flex;flex-direction:column;height:198px;min-width:0;padding:12px 12px 11px;border-radius:13px;overflow:hidden}
+.ballot-lane:after{content:"";position:absolute;right:-21px;top:12px;width:78px;height:78px;border:1px solid #ffffffbc;border-radius:50%;box-shadow:0 0 0 11px #ffffff35,0 0 0 22px #ffffff22}
+.ballot-lane.wish{background:#fff0bd}.ballot-lane.okay{background:#e3eff3}.ballot-lane.pass{background:#f2efe8}
+.ballot-lane>strong{position:relative;z-index:1;font-size:39px;line-height:1;letter-spacing:-.04em}
+.ballot-lane>b{position:relative;z-index:1;margin-top:3px;font-size:15px}
+.ballot-lane>small{position:relative;z-index:1;font-size:11px;color:#6e7a7d}
+.ballot-people{position:relative;z-index:1;display:flex;align-items:center;gap:4px;flex-wrap:wrap;margin-top:auto;max-height:75px;overflow:auto;scrollbar-width:thin}
+.ballot-person{display:inline-flex;align-items:center;gap:4px;padding:4px 7px 4px 4px;max-width:100%;border-radius:100px;background:#ffffffc7;color:#445d6a;font-size:11px;font-weight:700;white-space:nowrap}
+.ballot-person i{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#eed176;color:#6a5120;font-size:10px;font-style:normal;flex:none}
+.ballot-lane.okay .ballot-person i{background:#bddce9;color:#376074}.ballot-lane.pass .ballot-person i{background:#ddd7c8;color:#656052}
+.ballot-no-votes{font-size:11px;color:#899295}
+.ballot-pending{display:flex;align-items:center;gap:5px;min-height:24px;margin:11px 2px 0;font-size:12px;color:#79878b}
+.ballot-pending i{display:grid;place-items:center;width:20px;height:20px;margin-right:-8px;border:2px solid #fff;border-radius:50%;background:#eae8df;font-size:10px;font-style:normal;color:#867e6d}
+.ballot-pending span{margin-left:10px}
+.ballot-mine{position:relative;overflow:hidden;padding:17px 18px 14px;background:#f4f7f4;border-color:#dae4df}
+.ballot-mine:after{content:"";position:absolute;left:0;right:0;top:54px;border-top:1px dashed #b9cfcb}
+.ballot-mine h4{margin-bottom:25px}
+.ballot-choices{display:grid;gap:7px}
+.ballot-choice{display:flex;align-items:center;gap:9px;width:100%;min-height:43px;padding:0 11px;border:1px solid #dce6e2;border-radius:10px;background:#fff;color:#294353;text-align:left;font-size:13px;font-weight:750}
+.ballot-choice>i{display:grid;place-items:center;width:16px;height:16px;flex:none;border:1.5px solid #9bb0b4;border-radius:50%}
+.ballot-choice.selected{border-color:#d9af35;background:#ffecad;color:#5f4917}
+.ballot-choice.selected>i{border-color:#bd9325}.ballot-choice.selected>i:after{content:"";width:8px;height:8px;border-radius:50%;background:#c49a2b}
+.ballot-choice small{margin-left:auto;font-size:10px;color:#876d38;font-weight:500;white-space:nowrap}
+.ballot-mine p{margin-top:11px;font-size:11px;color:#7e8b88}
+.vote-ticket-sheet #room-error:empty{display:none}
+.vote-ticket-sheet .sheet-footer{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex:none;min-height:66px;padding:11px 35px;border:0;background:#fffdf7}
+.vote-ticket-sheet .sheet-footer .secondary{margin-right:auto;min-height:41px;border-radius:11px;background:#fff;color:#36586c;font-size:13px}
+.vote-ticket-sheet .sheet-footer .text-button{font-size:13px;color:#816835}
+.vote-ticket-sheet .sheet-footer .primary{flex:0 0 auto;width:auto;min-width:190px;min-height:41px;border-radius:11px;background:#f2d16c;color:#50401f;font-size:13px}
+.vote-ticket-sheet #trip-chat{background:#fffaf0}
+.vote-ticket-sheet #trip-chat .chat-avatar{display:none}
+.vote-ticket-sheet #trip-chat .chat-header:before{content:"安";display:grid;place-items:center;width:42px;height:42px;flex:none;border-radius:12px;background:#f1d16d;color:#59451c;font-size:25px;font-weight:800}
+@media(max-width:1200px){.vote-ticket-sheet.with-trip-chat[open],body[data-layout=web] dialog.vote-ticket-sheet.with-trip-chat[open]{grid-template-columns:minmax(0,1fr) 280px}.vote-ticket-sheet .sheet-body{padding:22px 23px 0}.ballot-main{grid-template-columns:minmax(0,1fr) 270px;gap:12px}.ballot-lane{padding:10px 9px}.ballot-person{font-size:10px}}
+@media(max-width:900px){dialog.vote-ticket-sheet,body[data-layout=web] dialog.vote-ticket-sheet{width:calc(100vw - 20px);height:94dvh;max-height:94dvh}.vote-ticket-sheet.with-trip-chat[open],body[data-layout=web] dialog.vote-ticket-sheet.with-trip-chat[open]{display:block;width:calc(100vw - 20px);height:94dvh;max-height:94dvh}.vote-ticket-sheet.with-trip-chat>#trip-chat{display:none}.ballot-main{grid-template-columns:1fr}.ballot-ticket{height:190px}.ballot-board{order:2}.ballot-mine{order:1}.ballot-mine:after{display:none}.ballot-mine h4{margin-bottom:12px}.ballot-choices{grid-template-columns:repeat(3,minmax(0,1fr))}.ballot-choice small{display:none}.ballot-city-nav{width:min(400px,calc(100% - 145px));grid-template-columns:minmax(0,1fr) 64px minmax(0,1fr)}.ballot-city-nav button{padding:4px}.ballot-city-nav button b{font-size:13px}}
+@media(max-width:600px){.vote-ticket-sheet .sheet-body{padding:18px 14px 0}.ballot-top{margin-right:45px}.ballot-top h3{font-size:20px}.ballot-ticket{grid-template-columns:minmax(0,1fr) 115px;height:170px}.ballot-ticket:before,.ballot-ticket:after{left:calc(100% - 115px)}.ballot-ticket-copy{left:14px;top:19px;bottom:16px}.ballot-ticket-copy strong{font-size:32px}.ballot-ticket-copy>span{display:none}.ballot-city-nav{right:8px;bottom:8px;width:calc(100% - 16px);grid-template-columns:minmax(0,1fr) 54px minmax(0,1fr);min-height:48px;padding:3px}.ballot-city-nav button{min-height:42px}.ballot-city-nav button small{display:none}.ballot-city-nav button b{font-size:12px}.ballot-city-nav button svg{width:15px;height:15px}.ballot-city-counter{min-height:35px}.ballot-city-counter small{display:none}.ballot-city-counter strong{margin:0;font-size:13px}.ballot-ticket-stub{padding:17px 10px}.ballot-ticket-stub>div strong{font-size:20px}.ballot-barcode{height:19px}.ballot-lanes{gap:5px}.ballot-lane{height:175px;padding:8px 6px}.ballot-lane>strong{font-size:26px}.ballot-lane>b{font-size:11px}.ballot-lane>small{font-size:9px}.ballot-person{padding:2px 4px;font-size:9px}.ballot-person i{display:none}.vote-ticket-sheet .sheet-footer{padding:8px 14px;gap:5px}.vote-ticket-sheet .sheet-footer .primary{min-width:0;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.ballot-city-nav button{transition:none}}

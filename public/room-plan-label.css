@@ -1,0 +1,45 @@
+/* A travel journal cover for every proposal. Keep the actions in their familiar places. */
+.room-design.room-design .room-plan-grid{gap:18px}
+.room-design.room-design .room-plan-card{display:flex;flex-direction:column;min-height:510px;background:#fffdf8;border:1px solid #e0d8c4;border-radius:17px;color:#253f51;overflow:hidden;box-shadow:0 10px 22px #4b493716}
+.room-design.room-design .room-plan-card.plan-later{opacity:1}
+.room-design.room-design .proposal-cover{height:296px;position:relative;flex:none;isolation:isolate;background:#dce9ed}
+.room-design.room-design .proposal-cover-open{position:absolute;z-index:4;inset:0;width:100%;height:100%;min-height:0;padding:0;border:0;background:transparent;cursor:pointer}
+.room-design.room-design .proposal-cover-open:focus-visible{outline:3px solid #f0d268;outline-offset:-5px;border-radius:12px}
+.room-design.room-design .proposal-photo{position:absolute;inset:0;display:block;width:100%;height:100%;margin:0;border-radius:0;object-fit:cover}
+.room-design.room-design .proposal-photo.room-photo-empty{padding:70px 20px 40px}
+.room-design.room-design .proposal-cover:after{content:"";position:absolute;z-index:1;inset:53% 0 0;background:linear-gradient(transparent,#fffdf8 95%);pointer-events:none}
+.room-design.room-design .proposal-card-header{position:absolute;z-index:2;top:14px;left:15px;right:108px;display:block;min-height:0;padding:0}
+.room-design.room-design .proposal-author{display:inline-flex;align-items:center;gap:7px;max-width:100%;padding:5px 9px 5px 5px;border-radius:9px;background:#fffdf4f0;color:#25475c;font-size:12px;font-weight:700;line-height:1.3;box-shadow:0 2px 8px #1631491f}
+.room-design.room-design .room-plan-card .member-initial{width:22px;height:22px;font-size:11px;background:#efd16a;color:#654f25}
+.room-design.room-design .proposal-trip-sticker{position:absolute;z-index:3;top:15px;right:16px;width:82px;height:78px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:12px 11px;background:#f0d268;color:#4a3a1b;border-radius:9px;box-shadow:0 5px 12px #1b263643;transform:rotate(7deg)}
+.room-design.room-design .proposal-trip-sticker:after{content:"";position:absolute;top:7px;right:8px;width:7px;height:7px;border-radius:50%;background:#fffdf8;box-shadow:inset 0 1px 2px #69542455}
+.room-design.room-design .proposal-trip-sticker small{font-size:9px;letter-spacing:.07em;line-height:1.3}
+.room-design.room-design .proposal-trip-sticker strong{font-size:27px;line-height:1.05}
+.room-design.room-design .proposal-trip-sticker em{font-size:10px;font-weight:800;font-style:normal;letter-spacing:.06em}
+.room-design.room-design .proposal-cover-title{position:absolute;z-index:2;bottom:7px;left:18px;right:18px;display:flex;align-items:baseline;gap:9px;min-width:0}
+.room-design.room-design .proposal-cover-title h3{min-width:0;margin:0;font-size:32px;line-height:1.2;letter-spacing:-.03em;color:#233d4e;overflow-wrap:anywhere}
+.room-design.room-design .proposal-cover-title span{font-size:13px;color:#936e22;font-weight:700;white-space:nowrap}
+.room-design.room-design .proposal-card-body{display:flex;flex-direction:column;flex:1;min-height:0;padding:1px 18px 0}
+.room-design.room-design .proposal-date{font-size:12px;font-weight:700;color:#4a6878;margin:0}
+.room-design.room-design .proposal-highlights{display:block;min-height:57px;padding:9px 0 0;margin:9px 0 0;border-top:1px solid #e6dfcd;color:#536d79;font-size:12px;line-height:1.6}
+.room-design.room-design .proposal-highlights span{display:inline;padding:0;background:none;border:0;border-radius:0;color:#536d79;font-size:12px;line-height:1.6;overflow-wrap:anywhere}
+.room-design.room-design .proposal-highlights span:not(.proposal-highlights-caption):not(:last-child):after{content:" · ";color:#8d9b98}
+.room-design.room-design .proposal-highlights .proposal-highlights-caption{display:block;color:#997637;font-size:10px;font-weight:800;letter-spacing:.08em;margin-bottom:2px}
+.room-design.room-design .proposal-card-links{margin-top:auto;padding:10px 0;border-top:1px solid #e5dfce}
+.room-design.room-design .room-plan-link,.room-design.room-design .proposal-edit-entry{font-size:13px;font-weight:700;color:#28678f;min-height:35px}
+.room-design.room-design .proposal-card-footer{border-top:1px solid #ecd8a7;border-radius:0;background:#fbf0cd;padding:10px 14px;min-height:0}
+.room-design.room-design .proposal-card-footer:before,.room-design.room-design .proposal-card-footer:after{display:none}
+.room-design.room-design .plan-vote-actions button{min-height:38px;border-radius:8px;font-size:12px}
+.room-design.room-design .proposal-delete{width:calc(100% - 28px);margin:0 14px;justify-content:flex-end;font-size:11px;min-height:32px;color:#978368}
+@media(max-width:700px){
+ .room-design.room-design .room-plan-card{min-height:480px}
+ .room-design.room-design .proposal-cover{height:266px}
+ .room-design.room-design .proposal-cover-title h3{font-size:29px}
+ .room-design.room-design .proposal-card-body{padding:1px 17px 0}
+}
+@media(max-width:380px){
+ .room-design.room-design .proposal-cover{height:238px}
+ .room-design.room-design .proposal-cover-title h3{font-size:25px}
+ .room-design.room-design .proposal-trip-sticker{width:72px;height:70px}
+ .room-design.room-design .proposal-card-header{right:94px}
+}

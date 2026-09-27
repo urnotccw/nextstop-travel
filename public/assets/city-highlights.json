@@ -1,0 +1,771 @@
+{
+  "长沙": {
+    "headline": "灯亮起来，长沙的夜晚开始了",
+    "items": [
+      {
+        "title": "长沙夜色",
+        "note": "高楼与街巷一起亮起来，把一点时间留给城市夜生活。",
+        "src": "assets/changsha.jpg",
+        "author": "XingYu Xian",
+        "source": "https://unsplash.com/photos/Q6v6JxLXcXw",
+        "license": "Unsplash License",
+        "fit": "cover"
+      }
+    ]
+  },
+  "成都": {
+    "headline": "一座桥，也有成都的慢生活",
+    "items": [
+      {
+        "title": "安顺廊桥",
+        "note": "沿锦江散散步，看廊桥在水面亮起倒影。",
+        "src": "assets/chengdu.jpg",
+        "author": "phatthanan tuppocha",
+        "source": "https://unsplash.com/photos/zvhhsB_s9iA",
+        "license": "Unsplash License",
+        "fit": "cover"
+      }
+    ]
+  },
+  "上海": {
+    "headline": "把这一眼，留给黄浦江",
+    "items": [
+      {
+        "title": "黄浦江天际线",
+        "note": "去江边看新旧建筑同框，感受上海的城市轮廓。",
+        "src": "assets/shanghai.jpg",
+        "author": "Night Glow",
+        "source": "https://unsplash.com/photos/uvnMzTq2YeI",
+        "license": "Unsplash License",
+        "fit": "cover"
+      }
+    ]
+  },
+  "北京": {
+    "headline": "红墙金瓦里的北京",
+    "items": [
+      {
+        "title": "故宫",
+        "note": "沿着宫殿与庭院慢慢走，给这片红墙金瓦留半天。",
+        "src": "assets/beijing-palace.jpg",
+        "author": "MChe Lee",
+        "source": "https://unsplash.com/photos/vOha7wHa-oU",
+        "license": "Unsplash License",
+        "fit": "cover"
+      }
+    ]
+  },
+  "杭州": {
+    "headline": "给西湖，留一段不赶路的时间",
+    "items": [
+      {
+        "title": "西湖",
+        "note": "亭桥、湖水与远山，适合把脚步放慢的杭州一面。",
+        "src": "assets/hangzhou-westlake.jpg",
+        "author": "Kounotori",
+        "source": "https://unsplash.com/photos/NQJBkCU9v6o",
+        "license": "Unsplash License",
+        "fit": "contain"
+      }
+    ]
+  },
+  "大理": {
+    "headline": "下一阵风，从洱海吹来",
+    "items": [
+      {
+        "title": "洱海",
+        "note": "湖面、小船与远山，把一个慢下午留在水边。",
+        "src": "assets/dali-erhai.jpg",
+        "author": "Zhijian Wu",
+        "source": "https://unsplash.com/photos/ekBwhFCt7is",
+        "license": "Unsplash License",
+        "fit": "cover"
+      }
+    ]
+  },
+  "泉州": {
+    "headline": "抬头是古塔，转角是闽南",
+    "items": [
+      {
+        "title": "泉州古塔",
+        "note": "八角石塔与层层飞檐，先认识这座古城的建筑之美。",
+        "src": "assets/quanzhou-pagoda.jpg",
+        "author": "lastmayday",
+        "source": "https://unsplash.com/photos/HAmyfT4YW6k",
+        "license": "Unsplash License",
+        "fit": "cover"
+      },
+      {
+        "title": "承天寺",
+        "note": "古城里的清静角落，慢慢看一看院落与园景。",
+        "src": "assets/quanzhou-chengtian.jpg",
+        "author": "daniel tang",
+        "source": "https://unsplash.com/photos/MU1JkbPgmPU",
+        "license": "Unsplash License",
+        "fit": "cover"
+      },
+      {
+        "title": "闽南屋脊",
+        "note": "抬头找一找屋顶的龙饰，细节里也藏着旅行的乐趣。",
+        "src": "assets/quanzhou-roof.jpg",
+        "author": "CHEN HENG",
+        "source": "https://unsplash.com/photos/zEct3vyQwpY",
+        "license": "Unsplash License",
+        "fit": "contain"
+      }
+    ]
+  },
+  "蓬莱": {
+    "headline": "去蓬莱，把海风装进口袋",
+    "items": [
+      {
+        "title": "蓬莱阁",
+        "note": "临海的楼阁、石墙与礁岸，先看一眼蓬莱的代表风景。",
+        "src": "assets/penglai-pavilion.jpg",
+        "author": "Benlisquare",
+        "source": "https://commons.wikimedia.org/wiki/File:Penglai_Pavilion_viewed_from_the_southeast.jpg",
+        "license": "CC BY-SA 4.0",
+        "fit": "cover"
+      },
+      {
+        "title": "蓬莱海边",
+        "note": "听听浪声，看看海边的人，把一点时间留给发呆。",
+        "src": "assets/penglai-coast.jpg",
+        "author": "Kevin",
+        "source": "https://unsplash.com/photos/p7DWqzwlkCo",
+        "license": "Unsplash License",
+        "fit": "cover"
+      }
+    ]
+  },
+  "天津": {
+    "headline": "天津，先从这一眼认识",
+    "items": [
+      {
+        "title": "天津天际线",
+        "note": "高楼与老街同框，换个角度认识天津。",
+        "src": "assets/first50/天津.jpg",
+        "author": "Tyngrwey",
+        "source": "https://commons.wikimedia.org/wiki/File:%E5%A4%A9%E6%B4%A5%E5%A4%A9%E9%99%85%E7%BA%BF202511.jpg",
+        "license": "CC0",
+        "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "南京": {
+    "headline": "南京，先从这一眼认识",
+    "items": [
+      {
+        "title": "夫子庙夜色",
+        "note": "秦淮河畔灯光亮起，给夜晚留一段散步时间。",
+        "src": "assets/first50/南京.jpg",
+        "author": "(WT-shared) Gongml",
+        "source": "https://commons.wikimedia.org/wiki/File:Nanjing_Kong_temple.jpg",
+        "license": "Public domain",
+        "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "苏州": {
+    "headline": "苏州，先从这一眼认识",
+    "items": [
+      {
+        "title": "苏州园林盆景",
+        "note": "庭院里的盆景也值得细看，慢慢发现江南的精巧。",
+        "src": "assets/first50/苏州.jpg",
+        "author": "Fulanke-Wong",
+        "source": "https://commons.wikimedia.org/wiki/File:Suzhou_Garten_Bonzai.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "重庆": {
+    "headline": "重庆，先从这一眼认识",
+    "items": [
+      {
+        "title": "洪崖洞",
+        "note": "层层吊脚楼亮起灯，山城的夜晚很有记忆点。",
+        "src": "assets/first50/重庆.jpg",
+        "author": "kmahyyg",
+        "source": "https://commons.wikimedia.org/wiki/File:%E9%87%8D%E5%BA%86%E6%B4%AA%E5%B4%96%E6%B4%9E%E5%A4%9C%E6%99%AF.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "宁波": {
+    "headline": "宁波，先从这一眼认识",
+    "items": [
+      {
+        "title": "天一阁",
+        "note": "藏书楼旁的庭院与水景，适合安静走走。",
+        "src": "assets/first50/宁波.jpg",
+        "author": "Mx. Granger",
+        "source": "https://commons.wikimedia.org/wiki/File:Tianyi_Pavilion%2C_Ningbo.jpg",
+        "license": "CC0",
+        "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "扬州": {
+    "headline": "扬州，先从这一眼认识",
+    "items": [
+      {
+        "title": "瘦西湖五亭桥",
+        "note": "沿湖看五亭桥，把脚步放慢一点。",
+        "src": "assets/first50/扬州.jpg",
+        "author": "Gisling",
+        "source": "https://commons.wikimedia.org/wiki/File:The_Five_Pavilion_bridge.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "绍兴": {
+    "headline": "绍兴，先从这一眼认识",
+    "items": [
+      {
+        "title": "绍兴水巷",
+        "note": "白墙、水巷与老街，找一段沿河的小路走走。",
+        "src": "assets/first50/绍兴.jpg",
+        "author": "Taco Witte",
+        "source": "https://commons.wikimedia.org/wiki/File:Shaoxing.jpg",
+        "license": "CC BY 2.0",
+        "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "黄山": {
+    "headline": "黄山，先从这一眼认识",
+    "items": [
+      {
+        "title": "黄山",
+        "note": "奇松与山峰之间，换一口山里的空气。",
+        "src": "assets/first50/黄山.jpg",
+        "author": "Ariel Steiner (Asteiner)",
+        "source": "https://commons.wikimedia.org/wiki/File:Huangshan.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fit": "contain"
+      }
+    ]
+  },
+  "合肥": {
+    "headline": "合肥，先从这一眼认识",
+    "items": [
+      {
+        "title": "逍遥津公园",
+        "note": "在湖边看看楼阁和倒影，留一个轻松的下午。",
+        "src": "assets/first50/合肥.jpg",
+        "author": "钉钉",
+        "source": "https://commons.wikimedia.org/wiki/File:Xiaoyaojin_Park.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "福州": {
+    "headline": "福州，先从这一眼认识",
+    "items": [
+      {
+        "title": "三坊七巷",
+        "note": "钻进三坊七巷，看看街巷里的老建筑。",
+        "src": "assets/first50/福州.jpg",
+        "author": "Zhangzhugang",
+        "source": "https://commons.wikimedia.org/wiki/File:Fuzhou_Sanfangqixiang_2019.03.13_11-20-47.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "厦门": {
+    "headline": "厦门，先从这一眼认识",
+    "items": [
+      {
+        "title": "鼓浪屿",
+        "note": "红瓦屋顶铺向海边，鼓浪屿值得慢慢逛。",
+        "src": "assets/first50/厦门.jpg",
+        "author": "Jakob Montrasio",
+        "source": "https://commons.wikimedia.org/wiki/File:Gulangyu.jpg",
+        "license": "CC BY 2.0",
+        "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "南昌": {
+    "headline": "南昌，先从这一眼认识",
+    "items": [
+      {
+        "title": "滕王阁",
+        "note": "抬头看层叠飞檐，认识赣江边的这座名楼。",
+        "src": "assets/first50/南昌.jpg",
+        "author": "Jorge.cacho.h",
+        "source": "https://commons.wikimedia.org/wiki/File:Tengwang_Pavillion.jpg",
+        "license": "Public domain",
+        "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "青岛": {
+    "headline": "青岛，先从这一眼认识",
+    "items": [
+      {
+        "title": "青岛海岸",
+        "note": "把行程放慢一点，留时间给海风和沙滩。",
+        "src": "assets/first50/青岛.jpg",
+        "author": "Vitsuha",
+        "source": "https://commons.wikimedia.org/wiki/File:Qingdao_Zhanqiao.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "济南": {
+    "headline": "济南，先从这一眼认识",
+    "items": [
+      {
+        "title": "大明湖",
+        "note": "湖水与城市同框，沿大明湖边散散步。",
+        "src": "assets/first50/济南.jpg",
+        "author": "happy lydia",
+        "source": "https://commons.wikimedia.org/wiki/File:Daming_Lake.jpg",
+        "license": "CC BY 2.0",
+        "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+        "fit": "contain"
+      }
+    ]
+  },
+  "威海": {
+    "headline": "威海，先从这一眼认识",
+    "items": [
+      {
+        "title": "威海海岸",
+        "note": "沿海岸看看城市，把大海放进这一站。",
+        "src": "assets/first50/威海.jpg",
+        "author": "蒋",
+        "source": "https://commons.wikimedia.org/wiki/File:Weihai_City.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "郑州": {
+    "headline": "郑州，先从这一眼认识",
+    "items": [
+      {
+        "title": "二七纪念塔",
+        "note": "从二七纪念塔开始，看看郑州的城市记忆。",
+        "src": "assets/first50/郑州.jpg",
+        "author": "Openthedoors",
+        "source": "https://commons.wikimedia.org/wiki/File:Erqi.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "洛阳": {
+    "headline": "洛阳，先从这一眼认识",
+    "items": [
+      {
+        "title": "龙门石窟",
+        "note": "沿石窟看雕刻细节，给历史留一点时间。",
+        "src": "assets/first50/洛阳.jpg",
+        "author": "Tgasrio",
+        "source": "https://commons.wikimedia.org/wiki/File:Luoyang_longmen_grottoes.jpg",
+        "license": "CC0",
+        "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "西安": {
+    "headline": "西安，先从这一眼认识",
+    "items": [
+      {
+        "title": "西安钟楼",
+        "note": "钟楼亮起灯，古城的夜晚就有了方向。",
+        "src": "assets/first50/西安.jpg",
+        "author": "Rat2",
+        "source": "https://commons.wikimedia.org/wiki/File:Xi'an_Bell_Tower_in_202012.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "太原": {
+    "headline": "太原，先从这一眼认识",
+    "items": [
+      {
+        "title": "晋祠",
+        "note": "走进晋祠，细看古建筑的屋檐与庭院。",
+        "src": "assets/first50/太原.jpg",
+        "author": "Xiquinho Silva",
+        "source": "https://commons.wikimedia.org/wiki/File:Jinci_Temple_74132-Taiyuan_(49222202013).jpg",
+        "license": "CC BY 2.0",
+        "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "大同": {
+    "headline": "大同，先从这一眼认识",
+    "items": [
+      {
+        "title": "云冈石窟",
+        "note": "站在石窟前，看看时光留在石像上的纹理。",
+        "src": "assets/first50/大同.jpg",
+        "author": "Zhangzhugang",
+        "source": "https://commons.wikimedia.org/wiki/File:Datong_Yungang_Shiku_2013.08.29_16-14-07.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fit": "contain"
+      }
+    ]
+  },
+  "沈阳": {
+    "headline": "沈阳，先从这一眼认识",
+    "items": [
+      {
+        "title": "沈阳故宫",
+        "note": "从大政殿出发，认识沈阳故宫的建筑细节。",
+        "src": "assets/first50/沈阳.jpg",
+        "author": "KangTyngrwey",
+        "source": "https://commons.wikimedia.org/wiki/File:%E6%B2%88%E9%98%B3%E6%95%85%E5%AE%AB%E5%A4%A7%E6%94%BF%E6%AE%BF.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "大连": {
+    "headline": "大连，先从这一眼认识",
+    "items": [
+      {
+        "title": "星海广场",
+        "note": "在星海广场走走，感受海滨城市的开阔。",
+        "src": "assets/first50/大连.jpg",
+        "author": "JesseW900",
+        "source": "https://commons.wikimedia.org/wiki/File:Dalian_Xinghai_Square.jpg",
+        "license": "CC BY 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "武汉": {
+    "headline": "武汉，先从这一眼认识",
+    "items": [
+      {
+        "title": "黄鹤楼",
+        "note": "层层飞檐向上舒展，先看武汉的经典地标。",
+        "src": "assets/first50/武汉.jpg",
+        "author": "Nature42",
+        "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%84%E9%B9%A4%E6%A5%BC%E5%A4%96%E6%99%AF.jpg",
+        "license": "CC0",
+        "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "哈尔滨": {
+    "headline": "哈尔滨，先从这一眼认识",
+    "items": [
+      {
+        "title": "圣索菲亚教堂",
+        "note": "在圣索菲亚教堂前驻足，感受这座城的建筑风格。",
+        "src": "assets/first50/哈尔滨.jpg",
+        "author": "闫恩铭 / Enming Yan",
+        "source": "https://commons.wikimedia.org/wiki/File:Saint_Sophia_Cathedral%2C_Harbin_4.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "广州": {
+    "headline": "广州，先从这一眼认识",
+    "items": [
+      {
+        "title": "广州塔",
+        "note": "沿江看广州塔，把城市风景留给夜晚或傍晚。",
+        "src": "assets/first50/广州.jpg",
+        "author": "钉钉",
+        "source": "https://commons.wikimedia.org/wiki/File:Canton_Tower%2C_Guangzhou.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "contain"
+      }
+    ]
+  },
+  "深圳": {
+    "headline": "深圳，先从这一眼认识",
+    "items": [
+      {
+        "title": "深圳湾天际线",
+        "note": "从深圳湾公园看天际线，给散步找个开阔背景。",
+        "src": "assets/first50/深圳.jpg",
+        "author": "Wishds",
+        "source": "https://commons.wikimedia.org/wiki/File:Shenzhen_Skyline.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fit": "contain"
+      }
+    ]
+  },
+  "长春": {
+    "headline": "长春，先从这一眼认识",
+    "items": [
+      {
+        "title": "北湖公园",
+        "note": "在北湖公园散散步，留一点时间给城市里的绿色。",
+        "src": "assets/first50/长春.jpg",
+        "author": "白井黑子yyds",
+        "source": "https://commons.wikimedia.org/wiki/File:%E9%95%BF%E6%98%A5%E5%8C%97%E6%B9%96%E5%85%AC%E5%9B%AD_20220805.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "contain"
+      }
+    ]
+  },
+  "桂林": {
+    "headline": "桂林，先从这一眼认识",
+    "items": [
+      {
+        "title": "象鼻山",
+        "note": "看山与水相遇，认识桂林的象鼻山。",
+        "src": "assets/first50/桂林.jpg",
+        "author": "螺钉",
+        "source": "https://commons.wikimedia.org/wiki/File:Elephant_Trunk_Hill%2C_Guilin.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "北海": {
+    "headline": "北海，先从这一眼认识",
+    "items": [
+      {
+        "title": "北海银滩",
+        "note": "走到银滩边，把海浪声放进旅行里。",
+        "src": "assets/first50/北海.jpg",
+        "author": "PQ77wd",
+        "source": "https://commons.wikimedia.org/wiki/File:Beihai_Silver_Beach_%26_Gulf_of_Tonkin.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "海口": {
+    "headline": "海口，先从这一眼认识",
+    "items": [
+      {
+        "title": "骑楼街区",
+        "note": "从骑楼街区开始，逛逛南方的街头生活。",
+        "src": "assets/first50/海口.jpg",
+        "author": "Zhangmoon618",
+        "source": "https://commons.wikimedia.org/wiki/File:Haikou_Qilou_Snack_Street.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "三亚": {
+    "headline": "三亚，先从这一眼认识",
+    "items": [
+      {
+        "title": "亚龙湾",
+        "note": "去亚龙湾吹吹风，给海边留一个不赶路的下午。",
+        "src": "assets/first50/三亚.jpg",
+        "author": "Gary Todd",
+        "source": "https://commons.wikimedia.org/wiki/File:Yalong_Bay%2C_Sanya%2C_Hainan_Island_(10098661615).jpg",
+        "license": "CC0",
+        "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "贵阳": {
+    "headline": "贵阳，先从这一眼认识",
+    "items": [
+      {
+        "title": "甲秀楼",
+        "note": "沿南明河看甲秀楼，水边也有城市的慢节奏。",
+        "src": "assets/first50/贵阳.jpg",
+        "author": "Geographer",
+        "source": "https://commons.wikimedia.org/wiki/File:Jiaxiu_Pavilion_in_Guiyang.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "丽江": {
+    "headline": "丽江，先从这一眼认识",
+    "items": [
+      {
+        "title": "丽江古城",
+        "note": "走进古城街巷，抬头看看木楼与屋檐。",
+        "src": "assets/first50/丽江.jpg",
+        "author": "钉钉",
+        "source": "https://commons.wikimedia.org/wiki/File:Old_Town_of_Lijiang.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "昆明": {
+    "headline": "昆明，先从这一眼认识",
+    "items": [
+      {
+        "title": "翠湖",
+        "note": "沿翠湖绕一绕，找一点城市里的清闲。",
+        "src": "assets/first50/昆明.jpg",
+        "author": "XuasdYX",
+        "source": "https://commons.wikimedia.org/wiki/File:Northeastern_of_Kunming_GreenLake%2C_2022.07.06.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "敦煌": {
+    "headline": "敦煌，先从这一眼认识",
+    "items": [
+      {
+        "title": "月牙泉",
+        "note": "沙丘环抱一弯泉水，看看沙漠中的独特风景。",
+        "src": "assets/first50/敦煌.jpg",
+        "author": "Hiroki Ogawa",
+        "source": "https://commons.wikimedia.org/wiki/File:Crescent_Moon_Spring_Yueyaquan_Mingshashan_Dunhuang_Gansu_China_%E6%95%A6%E7%85%8C_%E9%B8%A3%E6%B2%99%E5%B1%B1_%E6%9C%88%E7%89%99%E6%B3%89_-_panoramio_(2).jpg",
+        "license": "CC BY 3.0",
+        "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "兰州": {
+    "headline": "兰州，先从这一眼认识",
+    "items": [
+      {
+        "title": "中山桥",
+        "note": "走过中山桥，看看黄河穿城而过。",
+        "src": "assets/first50/兰州.jpg",
+        "author": "OofMon",
+        "source": "https://commons.wikimedia.org/wiki/File:ZhongShanBridgeLanzhou.jpg",
+        "license": "CC BY 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "拉萨": {
+    "headline": "拉萨，先从这一眼认识",
+    "items": [
+      {
+        "title": "布达拉宫",
+        "note": "远望布达拉宫，感受山城与宫殿的轮廓。",
+        "src": "assets/first50/拉萨.jpg",
+        "author": "Yi ZHANG",
+        "source": "https://commons.wikimedia.org/wiki/File:Potala_PALACE.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "乌鲁木齐": {
+    "headline": "乌鲁木齐，先从这一眼认识",
+    "items": [
+      {
+        "title": "红山公园远眺",
+        "note": "从红山公园远眺，把这座城市的轮廓收入眼底。",
+        "src": "assets/first50/乌鲁木齐.jpg",
+        "author": "Y Chen",
+        "source": "https://commons.wikimedia.org/wiki/File:A_glance_at_Urumqi_from_Hongshan_Park.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "contain"
+      }
+    ]
+  },
+  "西宁": {
+    "headline": "西宁，先从这一眼认识",
+    "items": [
+      {
+        "title": "东关清真大寺",
+        "note": "看看东关清真大寺的建筑，认识西宁的城市一面。",
+        "src": "assets/first50/西宁.jpg",
+        "author": "Michał Beim",
+        "source": "https://commons.wikimedia.org/wiki/File:Dongguan_Mosque_in_Xining_(2025).jpg",
+        "license": "CC BY 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "银川": {
+    "headline": "银川，先从这一眼认识",
+    "items": [
+      {
+        "title": "西夏陵",
+        "note": "走近西夏陵，看看黄土与历史留下的轮廓。",
+        "src": "assets/first50/银川.jpg",
+        "author": "Jayavarman",
+        "source": "https://commons.wikimedia.org/wiki/File:%E8%A5%BF%E5%A4%8F%E4%B8%89%E5%8F%B7%E9%99%B5.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "fit": "cover"
+      }
+    ]
+  },
+  "呼和浩特": {
+    "headline": "呼和浩特，先从这一眼认识",
+    "items": [
+      {
+        "title": "大召寺鼓楼",
+        "note": "细看大召寺鼓楼的屋檐，发现塞外古城的细节。",
+        "src": "assets/first50/呼和浩特.jpg",
+        "author": "Popolon",
+        "source": "https://commons.wikimedia.org/wiki/File:Hohhot_Dazhao_temple_drum_tower.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "fit": "contain"
+      }
+    ]
+  },
+  "张家界": {
+    "headline": "张家界，先从这一眼认识",
+    "items": [
+      {
+        "title": "张家界国家森林公园",
+        "note": "山峰从绿色中拔地而起，去自然里换个视角。",
+        "src": "assets/first50/张家界.jpg",
+        "author": "Kuruman",
+        "source": "https://commons.wikimedia.org/wiki/File:Zhangjiajie_National_Forest_Park.jpg",
+        "license": "CC BY 2.0",
+        "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+        "fit": "cover"
+      }
+    ]
+  }
+}

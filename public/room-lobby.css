@@ -1,0 +1,44 @@
+/* The room lobby: a useful first screen with one clear action and full-width room tickets. */
+.room-lobby{width:100%;max-width:1280px;margin:0 auto;color:#2e302c}
+.room-lobby-hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 270px;align-items:center;gap:34px;min-height:280px;padding:30px clamp(24px,3vw,44px);border:1px solid #e4d7a8;border-radius:24px;background:#fff8de;overflow:hidden}
+.room-lobby-hero-copy{position:relative;z-index:1;min-width:0}
+.room-lobby-hero h1{font-size:clamp(28px,3vw,40px);line-height:1.2;letter-spacing:-.025em;max-width:15em}
+.room-lobby-hero p{font-size:16px;color:#6f664e;line-height:1.7;margin:12px 0 22px;max-width:36em}
+.room-lobby-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.room-lobby-actions button{min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 20px;border-radius:12px;font-size:15px;white-space:nowrap}
+.room-lobby-actions .primary{width:auto;background:#efcf67;color:#3d331c;box-shadow:0 5px 16px #9278311b}
+.room-lobby-actions .secondary{width:auto;background:#fffdf6;color:#315e7c;border:1px solid #c9dce9;box-shadow:none}
+.room-lobby-actions svg{width:18px;height:18px}
+.room-lobby-visual{height:235px;display:flex;align-items:center;justify-content:center;position:relative}
+.room-lobby-visual img{height:235px;width:235px;object-fit:contain;filter:drop-shadow(0 11px 10px #8e763337)}
+.room-lobby-visual span{position:absolute;right:0;bottom:0;padding:7px 11px;border-radius:7px;background:#e4f1fb;color:#2e6589;font-size:13px;white-space:nowrap;transform:rotate(-4deg)}
+.room-lobby-section{margin:30px 0 0}
+.room-lobby-heading{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin:0 0 14px}
+.room-lobby-heading h2{font-size:23px;margin:0;color:#33392f}
+.room-lobby-heading>span{font-size:14px;color:#586f7c}
+.room-lobby-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;padding:8px 7px 10px}
+.room-lobby-ticket{position:relative;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(120px,.9fr) 82px;align-items:stretch;min-width:0;height:210px;padding:0;text-align:left;border:1px solid #d9c798;border-radius:9px;background:#fffdf6;color:#263e50;box-shadow:0 8px 20px #65553816;isolation:isolate;transition:transform .22s ease,box-shadow .22s ease}
+.room-lobby-ticket:nth-child(odd){transform:rotate(-.5deg)}
+.room-lobby-ticket:nth-child(even){transform:rotate(.5deg)}
+.room-lobby-ticket-copy{display:flex;flex-direction:column;min-width:0;padding:20px 12px 17px 22px}
+.room-lobby-ticket-type{color:#65717a;font-size:11px;letter-spacing:.08em}
+.room-lobby-ticket-title{display:block;margin:18px 0 6px;font-size:clamp(19px,2vw,25px);line-height:1.2;overflow-wrap:anywhere;color:#263e50}
+.room-lobby-ticket-member{display:block;font-size:12px;line-height:1.5;color:#586c76;overflow-wrap:anywhere}
+.room-lobby-ticket-enter{display:flex;align-items:center;gap:4px;margin-top:auto;font-size:14px;font-weight:700;color:#286f9c}
+.room-lobby-ticket-enter svg{width:16px;height:16px}
+.room-lobby-ticket-art{position:relative;display:block;min-width:0;margin:12px 0;background:#c7e1eb;overflow:hidden}
+.room-lobby-ticket-art img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.room-lobby-ticket-stub{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:6px;padding:18px 11px 15px;border-left:1px dashed #b49f78;background:#fffaf0;border-radius:0 8px 8px 0;color:#3f5d6d}
+.room-lobby-ticket-stub:before,.room-lobby-ticket-stub:after{content:'';position:absolute;left:-9px;width:17px;height:17px;border-radius:50%;background:#f8f8ed;border:1px solid #d9c798}
+.room-lobby-ticket-stub:before{top:-10px}.room-lobby-ticket-stub:after{bottom:-10px}
+.room-lobby-ticket-stub-label{font-size:11px;font-weight:800;line-height:1.2;letter-spacing:.14em;text-align:center}
+.room-lobby-ticket-barcode{width:45px;height:91px;background:repeating-linear-gradient(90deg,#31414a 0 2px,transparent 2px 4px,#31414a 4px 5px,transparent 5px 8px,#31414a 8px 11px,transparent 11px 14px)}
+.room-lobby-ticket-number{font-size:8px;letter-spacing:.1em;white-space:nowrap}
+.room-lobby-empty{padding:24px;border:1px dashed #d7c686;border-radius:14px;background:#fffdf4;color:#685c3e;font-size:15px}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.room-lobby-ticket:hover{transform:translateY(-4px) rotate(0);box-shadow:0 15px 25px #65553823}}
+.room-lobby button:focus-visible{outline:3px solid #3579a6;outline-offset:3px}
+@media(max-width:900px){.room-lobby-grid{grid-template-columns:1fr}.room-lobby-ticket{max-width:670px;grid-template-columns:minmax(0,1.2fr) minmax(130px,1fr) 82px}}
+@media(max-width:760px){.room-lobby-hero{grid-template-columns:minmax(0,1fr) 180px;min-height:245px;gap:12px}.room-lobby-visual,.room-lobby-visual img{width:170px;height:180px}.room-lobby-visual span{font-size:11px}.room-lobby-hero h1{font-size:31px}}
+@media(max-width:600px){.room-lobby{padding:0 18px 30px}.room-lobby-hero{display:block;min-height:280px;padding:23px 19px;border-radius:18px}.room-lobby-hero h1{font-size:28px;max-width:none}.room-lobby-hero p{font-size:14px;line-height:1.6;max-width:19em;margin:9px 0 26px}.room-lobby-actions{position:relative;z-index:2;align-items:stretch;flex-direction:column;gap:9px;width:min(100%,192px)}.room-lobby-actions button{width:100%;min-height:44px;padding:8px 11px;font-size:14px}.room-lobby-visual{position:absolute;right:3px;bottom:7px;width:135px;height:165px}.room-lobby-visual img{width:132px;height:155px}.room-lobby-visual span{display:none}.room-lobby-section{margin-top:25px}.room-lobby-heading h2{font-size:21px}.room-lobby-grid{gap:18px}.room-lobby-ticket{height:184px;grid-template-columns:minmax(0,1.2fr) minmax(92px,.85fr) 58px}.room-lobby-ticket-copy{padding:15px 7px 14px 13px}.room-lobby-ticket-title{font-size:18px;margin:14px 0 5px}.room-lobby-ticket-member{font-size:11px}.room-lobby-ticket-enter{font-size:12px}.room-lobby-ticket-art{margin:9px 0}.room-lobby-ticket-stub{padding:12px 5px}.room-lobby-ticket-stub-label{font-size:9px}.room-lobby-ticket-barcode{width:31px;height:80px}.room-lobby-ticket-number{font-size:6px}}
+@media(max-width:350px){.room-lobby-actions{width:170px}.room-lobby-visual{right:-7px;opacity:.88}}
+@media(prefers-reduced-motion:reduce){.room-lobby-ticket,.room-lobby-ticket:nth-child(odd),.room-lobby-ticket:nth-child(even){transition:none;transform:none}}
