@@ -1,14 +1,14 @@
 (()=>{'use strict';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const cache=new Map(),positions=new Map();let catalog;
-const safeLink=s=>{try{const u=new URL(s,location.origin);return u.protocol==='https:'||u.origin===location.origin?u.href:'#'}catch{return '#'}};
+const safeLink=s=>{try{const u=new URL(s.startsWith('/api/')?(window.NEXTSTOP_API_BASE||'')+s:s,document.baseURI);return u.protocol==='https:'||u.origin===location.origin?u.href:'#'}catch{return '#'}};
 async function load(city,refresh=false){
   const key=JSON.stringify([city.name,city.point]);if(!refresh&&cache.has(key))return cache.get(key);
   const bundled=window.CITY_HIGHLIGHTS?.[city.name.replace(/市$/,'')];if(bundled){cache.set(key,bundled);return bundled}
   catalog??=fetch('assets/city-highlights.json').then(r=>{if(!r.ok)throw Error();return r.json()}).catch(()=>{catalog=null;return {}});
   const local=(await catalog)[city.name.replace(/市$/,'')];if(local){cache.set(key,local);return local}
   const q=new URLSearchParams({name:city.name});if(city.point){q.set('lng',city.point[0]);q.set('lat',city.point[1])}
-  const r=await fetch('/api/city-highlights?'+q,{signal:AbortSignal.timeout(19000)});if(!r.ok)throw Error();
+  const r=await fetch((window.NEXTSTOP_API_BASE||'')+'/api/city-highlights?'+q,{signal:AbortSignal.timeout(19000)});if(!r.ok)throw Error();
   const data=await r.json();if(data.items?.length)cache.set(key,data);return data;
 }
 async function mount(city,root,refresh=false){

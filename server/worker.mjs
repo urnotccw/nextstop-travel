@@ -3,6 +3,7 @@ import {cleanTransit,cleanMeals,cleanLodging,cleanStay,cleanPrices} from './itin
 import {handleRooms} from './rooms.mjs';
 import {handleCityPhotos} from './city-highlights.mjs';
 const DEFAULT_MODEL = 'deepseek-flash';
+const GITHUB_PAGES_ORIGIN = 'https://urnotccw.github.io';
 // Search stays inside DeepSeek; no separate map/search account is required.
 export async function searchWithAnan(input,env,fetcher,signal){
  if(input.mode==='explore'&&/(查|搜索|最新|现在|价格|天气|交通|开放|门票)/.test(input.question)){
@@ -192,7 +193,7 @@ export async function handleApi(request,env,fetcher=fetch) {
     if(url.pathname==='/api/ai/status'&&request.method==='GET')return json({configured:!!env.DEEPSEEK_API_KEY,provider:'DeepSeek',guestAccess:true});
     if(url.pathname!=='/api/itinerary')fail(404,'NOT_FOUND','接口不存在。');
     if(request.method!=='POST')fail(405,'METHOD_NOT_ALLOWED','请使用生成行程按钮。');
-    if(request.headers.get('origin')!==url.origin)fail(403,'INVALID_ORIGIN','请从本站发起生成请求。');
+    if(![url.origin,GITHUB_PAGES_ORIGIN].includes(request.headers.get('origin')))fail(403,'INVALID_ORIGIN','请从本站发起生成请求。');
     if(!request.headers.get('content-type')?.startsWith('application/json'))fail(415,'INVALID_INPUT','请求格式不正确。');
     const input=validateInput(await readBody(request));
     if(!env.DEEPSEEK_API_KEY)fail(503,'AI_NOT_CONFIGURED','安安暂时无法推荐行程，候选城市和原行程已保留，请稍后再试。');
@@ -244,7 +245,25 @@ export async function handleApi(request,env,fetcher=fetch) {
 }
 export default {
   async fetch(request,env) {
-    if(new URL(request.url).pathname.startsWith('/api/'))return handleApi(request,env);
+    if(new URL(request.url).pathname.startsWith('/api/')){
+      const origin=request.headers.get('origin');
+      if(request.method==='OPTIONS'){
+        if(origin!==GITHUB_PAGES_ORIGIN)return new Response(null,{status:403});
+        return new Response(null,{status:204,headers:{
+          'Access-Control-Allow-Origin':origin,
+          'Access-Control-Allow-Methods':'GET, POST, OPTIONS',
+          'Access-Control-Allow-Headers':'Authorization, Content-Type, X-Trip-Creator, X-Trip-Visitor',
+          'Access-Control-Max-Age':'86400',
+          'Vary':'Origin'
+        }});
+      }
+      const response=await handleApi(request,env);
+      if(origin!==GITHUB_PAGES_ORIGIN)return response;
+      const headers=new Headers(response.headers);
+      headers.set('Access-Control-Allow-Origin',origin);
+      headers.append('Vary','Origin');
+      return new Response(response.body,{status:response.status,statusText:response.statusText,headers});
+    }
     return env.ASSETS.fetch(request);
   }
 };
