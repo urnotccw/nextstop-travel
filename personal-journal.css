@@ -1,0 +1,107 @@
+/* The personal itinerary shares the travel-folder language of room itineraries. */
+body[data-layout=web] #main.personal-journal{background:#fffdf6;color:#263d4e}
+body[data-layout=web] #main.personal-journal .plan-hero{height:264px;margin:0;border-radius:0;background:#263744;overflow:hidden}
+#main.personal-journal .plan-hero:after{inset:auto;right:23%;top:-175px;width:390px;height:390px;border:1px solid #ffffff1b;border-radius:50%;background:none;pointer-events:none}
+#main.personal-journal .plan-hero>img{position:absolute;right:7%;top:41px;width:218px;height:190px;padding:8px 8px 23px;object-fit:cover;background:#fffdf4;box-shadow:0 14px 23px #091a2559;transform:rotate(6deg)}
+#main.personal-journal .plan-hero:before{content:"";position:absolute;z-index:2;right:calc(7% + 78px);top:34px;width:55px;height:18px;background:#edcf7dbb;transform:rotate(-2deg);pointer-events:none}
+#main.personal-journal .plan-hero-text{left:38px;bottom:40px;max-width:calc(100% - 340px);color:#fffdf4}
+body[data-layout=web] #main.personal-journal .plan-hero-text h1{font-size:clamp(32px,3vw,48px);line-height:1.15;letter-spacing:-.03em;color:#fffdf4}
+#main.personal-journal .plan-hero-text p{margin-top:12px;font-size:14px;line-height:1.6;color:#d6e2e5}
+#main.personal-journal .plan-status{left:37px;top:24px;background:#fffdf4;color:#36566a;border-radius:6px;font-weight:700}
+#main.personal-journal .plan-switch{right:auto;left:200px;top:21px;color:#fffdf4;font-weight:700}
+#main.personal-journal .room-return-link{position:absolute;z-index:4;top:18px;left:27px;display:inline-flex;align-items:center;gap:7px;max-width:calc(100% - 54px);min-height:38px;padding:7px 12px;overflow:hidden;border:1px solid #ffffff80;border-radius:10px;background:#fffdf4;color:#285c7a;font-size:13px;font-weight:700;white-space:nowrap;text-overflow:ellipsis;box-shadow:0 4px 12px #091a2540}
+#main.personal-journal .room-return-link svg{flex:none;width:17px;height:17px}
+#main.personal-journal .plan-hero:has(.room-return-link) .plan-status{top:71px}
+#main.personal-journal .plan-hero:has(.room-return-link) .plan-switch{top:68px}
+#main.personal-journal .personal-folder-layers{position:relative;height:29px;background:#dca36c}
+#main.personal-journal .personal-folder-layers:before,#main.personal-journal .personal-folder-layers:after{content:"";position:absolute;left:0;right:0;height:24px;clip-path:polygon(0 0,37% 0,39% 58%,100% 58%,100% 100%,0 100%)}
+#main.personal-journal .personal-folder-layers:before{top:0;background:#ef9474}
+#main.personal-journal .personal-folder-layers:after{top:10px;background:#f0d06b;clip-path:polygon(0 0,62% 0,64% 58%,100% 58%,100% 100%,0 100%)}
+body[data-layout=web] #main.personal-journal>.day-tabs{position:relative;z-index:1;display:flex;align-items:flex-end;width:100%;min-height:59px;margin:0;padding:0 30px;gap:5px;overflow-x:auto;border-bottom:1px solid #e6dfcb;background:#fffdf6}
+body[data-layout=web] #main.personal-journal>.day-tabs .day-tab{flex:0 0 auto;width:auto;min-width:112px;min-height:47px;margin:0;padding:8px 17px;background:#e9e8df;border:0;border-radius:12px 12px 0 0;color:#666e70;font-size:14px;font-weight:700;white-space:nowrap}
+#main.personal-journal>.day-tabs .day-tab:nth-child(3n){background:#e3eff4}
+#main.personal-journal>.day-tabs .day-tab:nth-child(4n){background:#eee1c6}
+body[data-layout=web] #main.personal-journal>.day-tabs .day-tab.active{min-height:56px;background:#f1d471;color:#263d4d;box-shadow:0 -3px 10px #6260561b}
+#main.personal-journal>.day-tabs .day-tab small{font-size:10px}
+#main.personal-journal .plan-toolbar{margin:19px 34px 12px;justify-content:flex-start}
+#main.personal-journal .ai-plan-summary{margin:12px 34px 18px}
+body[data-layout=web] #main.personal-journal .daily-heading{display:flex;justify-content:flex-start;gap:17px;min-height:70px;margin:22px 34px 14px;padding:0}
+#main.personal-journal .personal-day-stamp{flex:none;width:61px;height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#efd36d;color:#263d4e;box-shadow:0 3px 8px #84734029;transform:rotate(-3deg)}
+#main.personal-journal .personal-day-stamp small{font-size:9px;font-weight:800;letter-spacing:.12em}
+#main.personal-journal .personal-day-stamp strong{font-size:26px;line-height:1.1}
+#main.personal-journal .daily-heading h3{flex:1;font-size:24px;line-height:1.3;color:#263d4e}
+#main.personal-journal .daily-heading button{align-self:center}
+#main.personal-journal>.timeline{position:relative;margin:0 34px;padding:0 0 15px}
+#main.personal-journal>.timeline:before{content:"";position:absolute;top:var(--personal-line-top,0px);height:var(--personal-line-height,0px);left:77px;width:2px;background:#bbd5df;mask-image:repeating-linear-gradient(to bottom,#000 0 3px,transparent 3px 8px)}
+#main.personal-journal .timeline>.day-route-guide{margin:0 0 21px;padding:13px 0;border-top:1px solid #e6dfca;border-bottom:1px solid #e6dfca;border-radius:0;background:transparent}
+body[data-layout=web] #main.personal-journal .timeline>.stop{grid-template-columns:111px minmax(0,1fr);gap:9px;align-items:start;padding:0 0 13px}
+#main.personal-journal .timeline>.stop:before{display:none}
+#main.personal-journal .timeline>.stop .stop-time{z-index:1;padding-top:20px;color:#27617e;font-size:14px;font-weight:800}
+#main.personal-journal .timeline>.stop .stop-time:after{left:70px;top:20px;width:12px;height:12px;border:3px solid #fffdf6;background:#f0d270;box-shadow:0 0 0 1px #cbb675}
+#main.personal-journal .timeline>.stop:nth-child(n) .stop-card{position:relative;padding:17px 18px!important;border-radius:7px;background:#fff9e9!important;box-shadow:0 5px 15px #405b6c14}
+#main.personal-journal .timeline>.stop:nth-child(3n) .stop-card{background:#eef5f7!important}
+#main.personal-journal .timeline>.stop .stop-card:before{content:"";position:absolute;top:25px;left:-7px;width:14px;height:14px;border-radius:50%;background:#fffdf6}
+#main.personal-journal .timeline>.stop .stop-header h3{font-size:18px;color:#263d4e}
+#main.personal-journal .timeline>.meal-timeline-row{grid-template-columns:111px minmax(0,1fr);gap:9px;margin:9px 0 22px}
+#main.personal-journal .timeline>.meal-timeline-row .meal-slot{position:relative;z-index:1;display:block;padding-top:20px;color:#27617e;font-size:14px;font-weight:800;line-height:1.3}
+#main.personal-journal .timeline>.meal-timeline-row .meal-slot small{color:#6b7c82;font-size:11px;font-weight:500}
+#main.personal-journal .timeline>.meal-timeline-row .meal-slot:after{content:"";position:absolute;left:70px;top:20px;width:12px;height:12px;border:3px solid #fffdf6;border-radius:50%;background:#f0d270;box-shadow:0 0 0 1px #cbb675}
+#main.personal-journal .timeline>.meal-timeline-row .meal-guide-item{background:#fff!important;border-radius:7px}
+#main.personal-journal .timeline>.add-stop{margin:20px 0 25px 120px;width:calc(100% - 120px);background:#fffdf6}
+#main.personal-journal>.plan-bottom{margin:10px 34px 26px;padding:18px 24px;background:#fff9e9;border:1px solid #e9dfc4;border-radius:14px}
+#main.personal-journal>.plan-lodging,#main.personal-journal>.confirmed-stay{margin-left:34px;margin-right:34px}
+
+/* Personal plan picker: the same image-first ticket rhythm as shared proposals. */
+body[data-layout=web] dialog.personal-plan-library{width:min(1050px,calc(100vw - 40px));max-width:1050px;background:#fffdf6}
+body[data-layout=web] dialog.personal-plan-library .sheet-body{padding:10px 26px 30px}
+.personal-plan-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(290px,100%),1fr));gap:18px}
+.personal-plan-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;border:1px solid #e0d8c4;border-radius:17px;background:#fffdf8;color:#253f51;box-shadow:0 10px 22px #4b493716}
+.personal-plan-cover{position:relative;display:block;width:100%;height:258px;min-height:0;padding:0;overflow:hidden;isolation:isolate;text-align:left;background:#dce9ed}
+.personal-plan-cover:after{content:"";position:absolute;z-index:1;inset:53% 0 0;background:linear-gradient(transparent,#fffdf8 95%);pointer-events:none}
+.personal-plan-cover:focus-visible{outline:3px solid #f0d268;outline-offset:-5px}
+.personal-plan-photo{display:block;width:100%;height:100%;object-fit:cover}
+.personal-plan-author{position:absolute;z-index:2;top:14px;left:15px;display:inline-flex;align-items:center;gap:7px;padding:7px 10px;border-radius:9px;background:#fffdf4f0;color:#25475c;font-size:12px;font-weight:700;box-shadow:0 2px 8px #1631491f}
+.personal-plan-author svg{width:15px;height:15px}
+.personal-plan-sticker{position:absolute;z-index:2;top:15px;right:16px;width:82px;height:78px;display:flex;flex-direction:column;justify-content:center;padding:12px 11px;background:#f0d268;color:#4a3a1b;border-radius:9px;box-shadow:0 5px 12px #1b263643;transform:rotate(7deg)}
+.personal-plan-sticker:after{content:"";position:absolute;top:7px;right:8px;width:7px;height:7px;border-radius:50%;background:#fffdf8}
+.personal-plan-sticker small{font-size:9px;line-height:1.3}.personal-plan-sticker strong{font-size:27px;line-height:1.05}.personal-plan-sticker em{font-size:10px;font-style:normal;font-weight:800;letter-spacing:.06em}
+.personal-plan-city{position:absolute;z-index:2;left:18px;right:18px;bottom:8px;display:flex;align-items:baseline;gap:9px}
+.personal-plan-city strong{font-size:32px;line-height:1.2;letter-spacing:-.03em;color:#233d4e}.personal-plan-city small{font-size:13px;font-weight:700;color:#936e22}
+.personal-plan-info{display:flex;flex:1;flex-direction:column;padding:3px 18px 14px}
+.personal-plan-info>p{display:flex;justify-content:space-between;gap:12px;padding:0 0 10px;border-bottom:1px solid #e6dfcd;font-size:12px;font-weight:700;color:#4a6878}
+.personal-plan-info>p span{color:#96723b}
+.personal-plan-highlights{display:flex;flex-direction:column;gap:3px;min-height:70px;padding:10px 0;color:#536d79;font-size:12px;line-height:1.6}
+.personal-plan-highlights b{font-size:10px;color:#997637;letter-spacing:.08em}
+.personal-plan-open{align-self:stretch;display:flex;align-items:center;justify-content:space-between;min-height:40px;border-top:1px solid #e6dfcd;color:#28678f;font-size:13px;font-weight:700;text-align:left}
+.personal-plan-open svg{width:17px;height:17px}
+.personal-plan-cover:hover .personal-plan-photo{transform:scale(1.025);transition:transform .28s ease-out}
+@media(max-width:700px){
+ body[data-layout=web] #main.personal-journal .plan-hero{height:228px}
+ #main.personal-journal .plan-hero>img{right:18px;top:72px;width:102px;height:108px;padding:4px 4px 14px}
+ #main.personal-journal .plan-hero:before{right:51px;top:66px;width:38px;height:12px}
+ #main.personal-journal .plan-hero-text{left:18px;bottom:28px;max-width:calc(100% - 125px)}
+ body[data-layout=web] #main.personal-journal .plan-hero-text h1{font-size:26px}
+ #main.personal-journal .plan-hero-text p{font-size:11px}
+ #main.personal-journal .plan-status{left:18px;top:18px}
+ #main.personal-journal .plan-switch{right:14px;top:15px}
+ #main.personal-journal .room-return-link{top:12px;left:14px;min-height:34px;padding:5px 9px;font-size:12px}
+ #main.personal-journal .plan-hero:has(.room-return-link) .plan-status{top:60px}
+ #main.personal-journal .plan-hero:has(.room-return-link) .plan-switch{top:58px;right:14px;left:auto}
+ body[data-layout=web] #main.personal-journal>.day-tabs{padding:0 13px}
+ body[data-layout=web] #main.personal-journal>.day-tabs .day-tab{min-width:91px;padding:8px 10px;font-size:12px}
+ #main.personal-journal .plan-toolbar,#main.personal-journal .ai-plan-summary{margin-left:15px;margin-right:15px}
+ body[data-layout=web] #main.personal-journal .daily-heading{margin:18px 15px 14px}
+ #main.personal-journal .daily-heading h3{font-size:19px}
+ #main.personal-journal .personal-day-stamp{width:49px;height:54px}
+ #main.personal-journal>.timeline{margin:0 15px}
+ #main.personal-journal>.timeline:before{left:51px}
+ body[data-layout=web] #main.personal-journal .timeline>.stop{grid-template-columns:63px minmax(0,1fr);gap:3px}
+ #main.personal-journal .timeline>.stop .stop-time{font-size:12px}
+ #main.personal-journal .timeline>.stop .stop-time:after{left:44px}
+ #main.personal-journal .timeline>.meal-timeline-row{grid-template-columns:63px minmax(0,1fr);gap:3px;margin-left:0}
+ #main.personal-journal .timeline>.meal-timeline-row .meal-slot{font-size:12px}
+ #main.personal-journal .timeline>.meal-timeline-row .meal-slot:after{left:44px}
+ #main.personal-journal .timeline>.add-stop{margin-left:66px;width:calc(100% - 66px)}
+ #main.personal-journal>.plan-bottom{margin-left:15px;margin-right:15px}
+}
+@media(prefers-reduced-motion:reduce){.personal-plan-cover:hover .personal-plan-photo{transform:none;transition:none}}

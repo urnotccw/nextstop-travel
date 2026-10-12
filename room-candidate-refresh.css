@@ -1,0 +1,44 @@
+.room-return-bar{position:sticky;top:0;z-index:10;display:flex;align-items:center;min-height:47px;padding:7px 23px;background:#fffdf6ed;border-bottom:1px solid #e8e2d2;backdrop-filter:blur(12px)}
+.room-return-bar .text-button{display:inline-flex;align-items:center;gap:8px;padding:6px 0;min-height:32px;color:#2d6c94;font-size:14px;font-weight:600}
+.room-return-bar svg{width:17px;height:17px}
+.room-candidates .room-candidates-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:20px}
+.room-candidates-kicker{display:flex;align-items:center;gap:9px;color:#477897;font-size:11px;font-weight:750;letter-spacing:.15em}
+.room-candidates-kicker:before{content:"";display:block;width:22px;height:2px;background:#e9c65c}
+.room-candidates .room-section-heading{display:flex;align-items:baseline;justify-content:flex-start;gap:13px;margin:7px 0 0}
+.room-design.room-design .room-candidates .room-section-heading{justify-content:flex-start;margin:7px 0 0}
+.room-candidates .room-section-heading h2{margin:0;color:#244359;font-size:24px;line-height:1.35;letter-spacing:-.025em}
+.room-candidates .room-section-heading>span{font-size:12px;color:#758996;white-space:nowrap}
+.room-candidates .room-tools,.room-design.room-design .room-candidates .room-tools{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0}
+.room-candidates .room-tools>*{min-height:43px;font-size:13px;white-space:nowrap}
+.room-candidates .room-tools .primary,.room-design.room-design .room-candidates .room-tools .primary{border-radius:9px;padding:9px 15px}
+.room-candidates .room-tools .secondary,.room-design.room-design .room-candidates .room-tools .secondary{border-radius:9px;padding:9px 13px}
+.room-candidates .room-tools .text-button{color:#386d91;padding:8px 0 8px 10px}
+.room-candidates .room-city-grid,.room-design.room-design .room-candidates .room-city-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.room-candidates .room-city-tile,.room-design.room-design .room-candidates .room-city-tile{display:block;min-width:0;padding:0;text-align:left;background:#fff;border:1px solid #d5e0e4;border-radius:13px;overflow:hidden;box-shadow:0 6px 20px #3d566812;transition:transform 220ms ease-out,box-shadow 220ms ease-out,border-color 220ms ease-out}
+.room-city-cover{display:block;position:relative;height:174px;overflow:hidden;background:#d6e7ed}
+.room-candidates .room-city-cover img,.room-candidates .room-city-cover .room-city-placeholder{display:block;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;transition:transform 350ms ease-out}
+.room-candidates .room-city-cover .room-city-placeholder{display:grid;place-items:center}
+.room-city-cover:after{content:"";position:absolute;inset:44% 0 0;background:linear-gradient(transparent,#142937d1);pointer-events:none}
+.room-city-index{position:absolute;z-index:1;left:12px;top:12px;padding:5px 8px;border-radius:5px;background:#ffffffdf;color:#345c75;font-size:10px;font-weight:750;letter-spacing:.09em}
+.room-city-location{position:absolute;z-index:1;left:14px;bottom:13px;color:#fff;text-shadow:0 1px 3px #132d4a80}
+.room-candidates .room-city-location strong,.room-design.room-design .room-candidates .room-city-location strong{display:block;margin:0;color:#fff;font-size:22px;font-weight:700;line-height:1.3}
+.room-candidates .room-city-location small,.room-design.room-design .room-candidates .room-city-location small{display:block;margin:2px 0 0;color:#e7eff4;font-size:11px;line-height:1.3;letter-spacing:.05em}
+.room-city-footer{display:flex;align-items:center;justify-content:space-between;gap:7px;min-height:63px;padding:9px 12px}
+.room-city-vote{display:flex;align-items:center;gap:7px;min-width:0}
+.room-city-voters{display:flex;align-items:center;padding-left:3px;flex:none}
+.room-city-voters i{display:grid;place-items:center;width:22px;height:22px;margin-left:-4px;border:2px solid #fff;border-radius:50%;background:#efd16e;color:#6a511f;font-size:10px;font-weight:700;font-style:normal}
+.room-city-voters i.cool{background:#d7e9f3;color:#426b85}
+.room-city-voters i.more{background:#e9eef0;color:#516978}
+.room-city-vote-copy{display:flex;flex-direction:column;gap:1px;min-width:0}
+.room-candidates .room-city-vote-copy strong,.room-design.room-design .room-candidates .room-city-vote-copy strong{display:block;margin:0;color:#345e76;font-size:12px;line-height:1.3;font-weight:650;white-space:nowrap}
+.room-candidates .room-city-vote-copy small,.room-design.room-design .room-candidates .room-city-vote-copy small{display:block;margin:0;color:#967651;font-size:10px;line-height:1.3;white-space:nowrap}
+.room-city-arrow{display:grid;place-items:center;flex:none;width:28px;height:28px;border-radius:50%;background:#edf4f7;color:#3f7291}
+.room-city-arrow svg{width:15px;height:15px}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .room-candidates .room-city-tile:hover,.room-design.room-design .room-candidates .room-city-tile:hover{transform:translateY(-4px);border-color:#92b9cd;box-shadow:0 11px 25px #3d566821}
+ .room-candidates .room-city-tile:hover img{transform:scale(1.04)}
+}
+@media(max-width:1100px){.room-candidates .room-candidates-head{align-items:flex-start;flex-direction:column;gap:14px}.room-candidates .room-city-grid,.room-design.room-design .room-candidates .room-city-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.room-return-bar{padding:7px 18px}.room-candidates .room-candidates-head{gap:13px;margin-bottom:14px}.room-candidates .room-section-heading h2{font-size:20px}.room-candidates .room-tools>*{min-height:40px;font-size:12px}.room-candidates .room-tools .text-button{padding-left:0}.room-candidates .room-city-grid,.room-design.room-design .room-candidates .room-city-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.room-city-cover{height:130px}.room-candidates .room-city-location strong,.room-design.room-design .room-candidates .room-city-location strong{font-size:18px}.room-city-location{left:10px;bottom:9px}.room-city-index{left:9px;top:9px;padding:4px 6px;font-size:9px}.room-city-footer{padding:8px;min-height:59px}.room-city-voters i{width:19px;height:19px;font-size:9px}.room-city-vote{gap:4px}.room-candidates .room-city-vote-copy strong,.room-design.room-design .room-candidates .room-city-vote-copy strong{font-size:11px}.room-city-arrow{width:24px;height:24px}}
+@media(max-width:359px){.room-candidates .room-city-grid,.room-design.room-design .room-candidates .room-city-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.room-city-voters{display:none}}
+@media(prefers-reduced-motion:reduce){.room-candidates .room-city-tile,.room-candidates .room-city-cover img{transition:none!important}}

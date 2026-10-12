@@ -1,0 +1,490 @@
+{
+  "note": "原始纯前端交付的运行文件校验，不包含后加交接文档。",
+  "files": [
+    {
+      "path": "app.js",
+      "bytes": 107347,
+      "sha256": "8419a5e7807bbbae9c7ac0f51739a4d4dc8f4068fa8773dca6d5a7363e63c114"
+    },
+    {
+      "path": "assets/anan-boarding-pass.png",
+      "bytes": 1665540,
+      "sha256": "3c7d9925f94d7f71fc1e3111bab593dcdf81b873391fdd4578067fab8d9f2e9d"
+    },
+    {
+      "path": "assets/anan-siamese-travel.png",
+      "bytes": 1896221,
+      "sha256": "20285d827bb2838e2aebe09b345a3925f8fb56e300b4432d2dc097b7069439b1"
+    },
+    {
+      "path": "assets/anan-suitcase.png",
+      "bytes": 1791554,
+      "sha256": "4730cff6cdb98eb53f454c3d26e36e6ec660e32e7d3ff28398a9af55d15e0d0f"
+    },
+    {
+      "path": "assets/beijing-palace.jpg",
+      "bytes": 123409,
+      "sha256": "b93b233727497420b4afa7a0d18ceee0f7b2fb061696f5a58395c12d434326e3"
+    },
+    {
+      "path": "assets/changsha.jpg",
+      "bytes": 96735,
+      "sha256": "ad3ccc3db6fae90c24dacc763ae80bc3e5eedcdd6d3361ada3ddaaa987b0134b"
+    },
+    {
+      "path": "assets/chengdu.jpg",
+      "bytes": 148913,
+      "sha256": "aa430d51d1bbee35d37d6aadc4f81c06186336831f595b3bbc03a9d6c575a2a8"
+    },
+    {
+      "path": "assets/china-data.js",
+      "bytes": 582540,
+      "sha256": "2d871ba41e4bff78a0011f2232d8b27b90813e0ce6cc59f56e77936a303f9485"
+    },
+    {
+      "path": "assets/china.json",
+      "bytes": 582521,
+      "sha256": "5effea728c28643e27bfc81a9e6a9da851ff2e64c111b6b4cc82f5580ef108c2"
+    },
+    {
+      "path": "assets/city-directory.js",
+      "bytes": 65031,
+      "sha256": "64171c58a18af614f0746679a45ffb94898c8eac297d5cdab122e4960453756f"
+    },
+    {
+      "path": "assets/city-highlights-data.js",
+      "bytes": 20303,
+      "sha256": "c0c4b501854ae96cfd2f24eb8fefaa91c45dd49cecb42f1b8b0496c0a50b047b"
+    },
+    {
+      "path": "assets/city-highlights.json",
+      "bytes": 27047,
+      "sha256": "864549220e05337cacb64f5b68b1ae579ae4b8bc1accf9919dfc9f68e7511145"
+    },
+    {
+      "path": "assets/d3.min.js",
+      "bytes": 279708,
+      "sha256": "8b56e04f36583949cb0832c5cb863785ad26d6b9d444068f069764ea154f379a"
+    },
+    {
+      "path": "assets/dali-erhai.jpg",
+      "bytes": 195567,
+      "sha256": "ce3ae72cce4232552431887f13e2df5fde649b5b40b3bf0323ddca2b31fcbc65"
+    },
+    {
+      "path": "assets/first50/三亚.jpg",
+      "bytes": 104808,
+      "sha256": "e8251a0949af2471509867e02ca17b0780f0a126c4aef4d4b9b9f9e48f0a803c"
+    },
+    {
+      "path": "assets/first50/丽江.jpg",
+      "bytes": 218701,
+      "sha256": "f917b56873ba83673950f7a2c81c9eb31d885585ea90b468c1861525e2e6e615"
+    },
+    {
+      "path": "assets/first50/乌鲁木齐.jpg",
+      "bytes": 61475,
+      "sha256": "199de2169757a98c048faf79eae5ed40636d995c62c600d274e77f524713168f"
+    },
+    {
+      "path": "assets/first50/兰州.jpg",
+      "bytes": 209015,
+      "sha256": "b0b7e0e01973c0dc9fb0fb4b05906468a658c97a661562c9086209f8c8f7a7d7"
+    },
+    {
+      "path": "assets/first50/北海.jpg",
+      "bytes": 109425,
+      "sha256": "201520e1bb59f7957a32bd34853e80e643a5b4fc595b42f4d4af92082ca10134"
+    },
+    {
+      "path": "assets/first50/南京.jpg",
+      "bytes": 149599,
+      "sha256": "8537b48bb043879d331cb54ced6ad9dd9f45739aed8c1cf6671b57fcbc80314f"
+    },
+    {
+      "path": "assets/first50/南昌.jpg",
+      "bytes": 100880,
+      "sha256": "7068ad3fd6580840b387cf1ca5088106a56101a8948dcbed8074a489fefbe6bc"
+    },
+    {
+      "path": "assets/first50/厦门.jpg",
+      "bytes": 417562,
+      "sha256": "39219463e3b554b3d482764026610d8463e591da2ee2a8f59b408bddde1806b9"
+    },
+    {
+      "path": "assets/first50/合肥.jpg",
+      "bytes": 99110,
+      "sha256": "c1ba75cc43da21d86ff463548225c789d632ca6ef25801cbf34f11205a014b5d"
+    },
+    {
+      "path": "assets/first50/呼和浩特.jpg",
+      "bytes": 265374,
+      "sha256": "6b05bc7a2a052fb4e9dcf287e3c2f3970bc109106b13addecde2341b26843568"
+    },
+    {
+      "path": "assets/first50/哈尔滨.jpg",
+      "bytes": 135852,
+      "sha256": "3b5bf6b7715d966563035dd545439250a5f8d7197c86bb985934bb68f32cdca9"
+    },
+    {
+      "path": "assets/first50/大同.jpg",
+      "bytes": 482388,
+      "sha256": "2e658400bbd2523461e525de0793202376fe6e55aa6037ebcc75c29e9468f92c"
+    },
+    {
+      "path": "assets/first50/大连.jpg",
+      "bytes": 148903,
+      "sha256": "3b30d32988eb6546eec167f9d43ea77755b67d977942637e795fa0939a1b757d"
+    },
+    {
+      "path": "assets/first50/天津.jpg",
+      "bytes": 191095,
+      "sha256": "7eed3587224ef8e12a3ce664a8583094d570a3884e3bb0be7c0242e4c5c0b3a4"
+    },
+    {
+      "path": "assets/first50/太原.jpg",
+      "bytes": 275017,
+      "sha256": "3995138a714e6802551b431bbf7d611134481f1b09a3edd450e0a7f0aeee8332"
+    },
+    {
+      "path": "assets/first50/威海.jpg",
+      "bytes": 119861,
+      "sha256": "ab9c773ccc324098fc99395b9f5cd34a90827323c6d918ab81fec7209e3bbdc3"
+    },
+    {
+      "path": "assets/first50/宁波.jpg",
+      "bytes": 432520,
+      "sha256": "59f9bdbdcbb1cb06ac6f2e56a81e1e6a214a8d7899d1f28012dbd15febcf6f09"
+    },
+    {
+      "path": "assets/first50/广州.jpg",
+      "bytes": 279024,
+      "sha256": "122e09487fed7b6b0a8c0c9319c956f26f7350a20f0b2270488a3a524ec6ed29"
+    },
+    {
+      "path": "assets/first50/张家界.jpg",
+      "bytes": 157151,
+      "sha256": "7c5c58ed5ea942e689ae38418ca4e4a81550ed280c7bf7cfb45e604a3c7a6cf4"
+    },
+    {
+      "path": "assets/first50/扬州.jpg",
+      "bytes": 212921,
+      "sha256": "aa82b8630db8a149ad916710a198600988564e326332e32b58d8ca520d685598"
+    },
+    {
+      "path": "assets/first50/拉萨.jpg",
+      "bytes": 233899,
+      "sha256": "6e277e99129b5c0986e28959b55fd1fd94857934ea41c4f768633f1b7c831c88"
+    },
+    {
+      "path": "assets/first50/敦煌.jpg",
+      "bytes": 150329,
+      "sha256": "8255e4a1893571e70e378825a028b097234d82f3dec3627e09c945aae501909f"
+    },
+    {
+      "path": "assets/first50/昆明.jpg",
+      "bytes": 124786,
+      "sha256": "5584072a8c4023edb51cf229811758ac8cc315241846761dcc624cd5c4e22d7a"
+    },
+    {
+      "path": "assets/first50/桂林.jpg",
+      "bytes": 136570,
+      "sha256": "c54ef593f39dc30abed7da01d52ac494c9a9fa6286bb73d06a7020f6380d1ccc"
+    },
+    {
+      "path": "assets/first50/武汉.jpg",
+      "bytes": 127185,
+      "sha256": "588b7bb90b7bcac3d584c8aa6006f3d5700f00a4169b500591e07afa6cb43d1f"
+    },
+    {
+      "path": "assets/first50/沈阳.jpg",
+      "bytes": 238886,
+      "sha256": "0ee22aa10eaa83f479ea0bcfedbbd9cdcbe72d30f5943d114e78ad0206457efc"
+    },
+    {
+      "path": "assets/first50/洛阳.jpg",
+      "bytes": 249647,
+      "sha256": "366dc22514918f00b842b0cead7135942afdd67facaac877b1dc48de2c750837"
+    },
+    {
+      "path": "assets/first50/济南.jpg",
+      "bytes": 143997,
+      "sha256": "a2a187bccfb7909e37cad7b207706a92db9594964487d392d1a66ec48041d817"
+    },
+    {
+      "path": "assets/first50/海口.jpg",
+      "bytes": 175317,
+      "sha256": "9a26c131ce1ea3cbe6ffd6ebd6909c102f4d837c008177f2c105c524fab0de5b"
+    },
+    {
+      "path": "assets/first50/深圳.jpg",
+      "bytes": 150939,
+      "sha256": "0902c4159778a3f44c52500cdb6a225886ffbd01f5604ad321e2ad536630d9d1"
+    },
+    {
+      "path": "assets/first50/福州.jpg",
+      "bytes": 258650,
+      "sha256": "112a9fb35803877cc5f264a8597663f94daec7d164f7866859e75f427a81384b"
+    },
+    {
+      "path": "assets/first50/绍兴.jpg",
+      "bytes": 151917,
+      "sha256": "76ae1c5eda290b95f39f0fee48502c2587944cb7ee1d7a004a2deff2bffbc5c9"
+    },
+    {
+      "path": "assets/first50/苏州.jpg",
+      "bytes": 292248,
+      "sha256": "75666df5fb7f69a6c5e15867d07a9bc03c5dad2d5b377e65a29f82dcb8d8621a"
+    },
+    {
+      "path": "assets/first50/西宁.jpg",
+      "bytes": 191236,
+      "sha256": "f69b5b2bc9dfd8737885188c580e379c35dd64d4c4465932e7307a8dc1a02bb5"
+    },
+    {
+      "path": "assets/first50/西安.jpg",
+      "bytes": 127132,
+      "sha256": "2c637e8f312988346122c60e161a153bc59520062b059ce016d1177a995cd270"
+    },
+    {
+      "path": "assets/first50/贵阳.jpg",
+      "bytes": 179647,
+      "sha256": "cbc040c340afe1a2a0e5a16c8882c9622940e125505dcdbe5cf5976f5a88782f"
+    },
+    {
+      "path": "assets/first50/郑州.jpg",
+      "bytes": 166290,
+      "sha256": "9a3fa921c2db3a93dc7438e7d5163c2add1e7af473ed419e7c0d2e14567aa5c6"
+    },
+    {
+      "path": "assets/first50/重庆.jpg",
+      "bytes": 193075,
+      "sha256": "a779a12056c33952f6e75fdbb929b5e026ccb08c034acff4ca3bd4201d579555"
+    },
+    {
+      "path": "assets/first50/银川.jpg",
+      "bytes": 83134,
+      "sha256": "ec39b5836986528b59ff2f9c3fee6a52ad340dff804f255b6f152c2b65c19786"
+    },
+    {
+      "path": "assets/first50/长春.jpg",
+      "bytes": 477479,
+      "sha256": "48d0da954d4ceba17807469e83cceb562c3d755292c0b8dc4bbe83207076b402"
+    },
+    {
+      "path": "assets/first50/青岛.jpg",
+      "bytes": 223597,
+      "sha256": "9047f4af946d5e9dd2aa609eef80c53d98d1cc7b44e9a90fa1a9e197d3a692c7"
+    },
+    {
+      "path": "assets/first50/黄山.jpg",
+      "bytes": 348308,
+      "sha256": "28854ba3ee090bd9e9d6db477971ba941840c77a31676841ae18cb0811d17575"
+    },
+    {
+      "path": "assets/hangzhou-westlake.jpg",
+      "bytes": 172495,
+      "sha256": "fc2a43c88c83797007c574b5f7229b45d11705c10cef34c9b671ed692e7d6ff0"
+    },
+    {
+      "path": "assets/lucide.min.js",
+      "bytes": 357808,
+      "sha256": "4a1df82cb2d94f5ef6e974846e7dede7440f1620cae161c9655cad48356002c2"
+    },
+    {
+      "path": "assets/Nunito-OFL.txt",
+      "bytes": 4584,
+      "sha256": "b1bebaea6cbe6daafc7733dff59b31d18e0b5125453f3017df03ae6794d604c2"
+    },
+    {
+      "path": "assets/penglai-coast.jpg",
+      "bytes": 126487,
+      "sha256": "1fc8fba13d9e095336ffc189a646501ec8bbd13bfcf7242b5da9e9d04b624612"
+    },
+    {
+      "path": "assets/penglai-pavilion.jpg",
+      "bytes": 119985,
+      "sha256": "8b6dabbc2ecd422c59db02f583285cebe4a6d56dc15628e3dd3a5952a241ef8f"
+    },
+    {
+      "path": "assets/quanzhou-chengtian.jpg",
+      "bytes": 147870,
+      "sha256": "82e0ebb17ccfed2298ae13469aed7b8cf7676d6cf2ac5ef5647a0d7d88e52cea"
+    },
+    {
+      "path": "assets/quanzhou-pagoda.jpg",
+      "bytes": 148627,
+      "sha256": "21dc52e81c325e31d35cfa3e92ab48abb9bc3a5981540297d75f164ab003334f"
+    },
+    {
+      "path": "assets/quanzhou-roof.jpg",
+      "bytes": 230207,
+      "sha256": "52b336a407c61d38908bbc7f22ac55d609fed2dae390d9f8130fe24476bd7bc7"
+    },
+    {
+      "path": "assets/shanghai.jpg",
+      "bytes": 104432,
+      "sha256": "476e0b90c425355da2095a009a4064cdb429354979eb49b0ef53717a2cb490af"
+    },
+    {
+      "path": "assets/travel-round.ttf",
+      "bytes": 125416,
+      "sha256": "c5776505c7b3df3c3ca763477b795d6bbc6517760bede0462ab77d1fb44954a6"
+    },
+    {
+      "path": "boarding-pass.css",
+      "bytes": 5383,
+      "sha256": "d99b0755c0fd9751c471f3d66fe636292882affeff787e885605f9ad7af04b96"
+    },
+    {
+      "path": "city-highlights.js",
+      "bytes": 4220,
+      "sha256": "c6b30ff547e80c48d390cf2628760d2384dce59e6715f0caa6220c441d8de2c3"
+    },
+    {
+      "path": "cream.css",
+      "bytes": 76996,
+      "sha256": "dec5dd3499eb8bf54814c67db0d14735fad8f498727aa9827549a9fed6c45b1a"
+    },
+    {
+      "path": "credits.html",
+      "bytes": 15493,
+      "sha256": "a181a0a413a3dfcbc21ddb8aad93afee2721e51c68bc04ab351a7a0c722b45ce"
+    },
+    {
+      "path": "dart-picker.js",
+      "bytes": 1684,
+      "sha256": "b8e98d2c92f1c98cd537059bb4564531142cd6f88353a7f0519b48a9c5c3655d"
+    },
+    {
+      "path": "data.js",
+      "bytes": 5220,
+      "sha256": "4bebde72f6831c6fbe686c8cbbbef75d9978b422ade9b6e1cfa2c582b5a8527b"
+    },
+    {
+      "path": "desktop.css",
+      "bytes": 16825,
+      "sha256": "071920ef1e050140c6e31657162b92f5add4278ed0d943856b1d93324e8e809e"
+    },
+    {
+      "path": "frontend-demo.css",
+      "bytes": 484,
+      "sha256": "fd8acfbe8bbedf5cb01b0c9e1cbec3bac85ac0ee73deeb7b3c7aa3be752cdebb"
+    },
+    {
+      "path": "frontend-demo.js",
+      "bytes": 17273,
+      "sha256": "34a1ed633bafb3faea777365ee061a66da38ca9148902eecdde9844d15a6f08e"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4049,
+      "sha256": "4213b45278405b82092bff6604c3fbc275e23607e8920b6bc780c1f66e5169f7"
+    },
+    {
+      "path": "itinerary-details.js",
+      "bytes": 26306,
+      "sha256": "32ea227d23d4cdedbf0dbd79503674cc900de5b50a036821de6d3da1accb6bd2"
+    },
+    {
+      "path": "personal-journal.css",
+      "bytes": 12745,
+      "sha256": "140385761b6068550138b013155c06fb3bccb28abdd210c25b50f3680b5c32f1"
+    },
+    {
+      "path": "plan-features.js",
+      "bytes": 12043,
+      "sha256": "c22a4bc3368851112043bb62028ad83b6b61e05bbd418a8c43b542ed7b9827c4"
+    },
+    {
+      "path": "plan-state.js",
+      "bytes": 2219,
+      "sha256": "3492a443112843b883328bbb0afd5397b15e82990bdef82920e4bf7370634551"
+    },
+    {
+      "path": "room-candidate-refresh.css",
+      "bytes": 6773,
+      "sha256": "053b38ed5135efb4a43789a0bf25ecf9e510678713cc37b3fa294a00df0bc414"
+    },
+    {
+      "path": "room-design.css",
+      "bytes": 21042,
+      "sha256": "adfdfdf6b6d5c90f4b91ed2d04dd5215a900f0e4ad2ed4e365f7c8f671d48f43"
+    },
+    {
+      "path": "room-invite.css",
+      "bytes": 5981,
+      "sha256": "5565ced3e9a4219e955189c81c319b4db0a3f8d15d76053d8ff202d618eaf5a3"
+    },
+    {
+      "path": "room-itinerary-folder.css",
+      "bytes": 16124,
+      "sha256": "7bda09426b56097b63597f1de28f9d942c1ea95e98c291d6216c6d2f8c0829fc"
+    },
+    {
+      "path": "room-ledger-compact.css",
+      "bytes": 2123,
+      "sha256": "53cb35e938a4952e29f4db16c5c75e1f30088befc60f9f51c83a5939023694d5"
+    },
+    {
+      "path": "room-lobby.css",
+      "bytes": 6547,
+      "sha256": "3ec9bab8133f782f76072080c07b7dae0eeee136c470bfe9b9831ad3e7e28898"
+    },
+    {
+      "path": "room-member-stamps.css",
+      "bytes": 7134,
+      "sha256": "1d21497076b462ca837ab425d9405489bae2e024da25ffdd0f8de6ea63c860c0"
+    },
+    {
+      "path": "room-plan-label.css",
+      "bytes": 5333,
+      "sha256": "5b402288234afcee9eb1a0c8b1981b1319575a77210eea2b6566945ff75214d6"
+    },
+    {
+      "path": "room-tool-empty.css",
+      "bytes": 4765,
+      "sha256": "1258bf3af217092e95ea1cbf64a4177a37051580278fa1f1c8217d0a5dbf0c48"
+    },
+    {
+      "path": "room-tool-objects.css",
+      "bytes": 23230,
+      "sha256": "7ee359cf87305f443eca581872175d4e58e7f1d8e2c66b4428723bf897c95146"
+    },
+    {
+      "path": "room-tools.css",
+      "bytes": 7681,
+      "sha256": "6e4f6509fa9f00905edb6701bc32d9cbbd6fb45dfdb5eb0a37a4caf40569ed31"
+    },
+    {
+      "path": "room-tools.js",
+      "bytes": 33841,
+      "sha256": "3bfeac3764d16d44b28669815c6391bc7b5cb9776b91a409eaf785bcc1b9eb37"
+    },
+    {
+      "path": "room-vote-ticket.css",
+      "bytes": 12033,
+      "sha256": "879457defdc6bea420c8897625e2f85cb988a78f6ac6e61bbb6d0de45576d365"
+    },
+    {
+      "path": "rooms.js",
+      "bytes": 86516,
+      "sha256": "ded4a5591fd3318eb4d51ebfcec6b421f057939b0688953057932fbb86a7e892"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 34046,
+      "sha256": "7410cc6384fd8e8d73546e57195eb480bc3565decfd7606ccce7bb4d4c389ba1"
+    },
+    {
+      "path": "travel-forms.css",
+      "bytes": 9653,
+      "sha256": "5e5136a12d56ace2f6820978b3da2e229d6d1d4d5607ff023e3751ffbb788aa1"
+    },
+    {
+      "path": "trip-chat.js",
+      "bytes": 15419,
+      "sha256": "a964e304c03da60f1526b9891905f86a076011f9f3de12e9f0cf05681146831b"
+    }
+  ]
+}

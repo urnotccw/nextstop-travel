@@ -1,0 +1,48 @@
+/* The desktop map's action panel is a destination ticket, never a booking claim. */
+@media (min-width:900px){
+ body[data-layout=web] .main[data-page=map] .discovery-side{position:relative;display:flex;flex-direction:column;justify-content:flex-start;overflow:hidden;padding:0;background:#fffdf6;border:1px solid #e7dab8;border-radius:18px;box-shadow:0 18px 38px rgba(81,66,29,.11)}
+ .discovery-ticket-head{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:42px;padding:8px 21px;background:#f1d46d;color:#4c3b17;font-size:13px;font-weight:800}
+ .discovery-ticket-head small{font-size:9px;font-weight:800;letter-spacing:.13em;white-space:nowrap}
+ .discovery-ticket-route{display:grid;grid-template-columns:minmax(0,1fr) 62px minmax(0,1fr);align-items:center;gap:4px;min-height:101px;padding:14px 22px 10px;background:#fff8df}
+ .discovery-ticket-route>div:last-child{text-align:right}
+ .discovery-ticket-route small{display:block;margin-bottom:6px;color:#806e4d;font-size:10px;font-weight:700;letter-spacing:.04em}
+ .discovery-ticket-route strong{display:block;color:#233d4d;font-size:22px;font-weight:800;line-height:1.15;overflow-wrap:anywhere}
+ .ticket-flight-path{display:flex;align-items:center;justify-content:center;position:relative;color:#aa7a27}
+ .ticket-flight-path:before,.ticket-flight-path:after{content:"";position:absolute;top:50%;width:15px;border-top:1px dashed #c9ab64}
+ .ticket-flight-path:before{left:0}.ticket-flight-path:after{right:0}
+ .ticket-flight-path svg{width:21px;height:21px;transform:rotate(45deg)}
+ body[data-layout=web] .main[data-page=map] .discovery-side .welcome{min-height:112px;height:112px;flex:none;margin:0;padding:17px 22px 10px;background:#fffdf6}
+ body[data-layout=web] .main[data-page=map] .discovery-side .welcome-copy{width:66%;max-width:none}
+ body[data-layout=web] .main[data-page=map] .discovery-side .welcome .hero-title{font-size:23px;line-height:1.25}
+ body[data-layout=web] .main[data-page=map] .discovery-side .travel-companion{width:116px;height:116px;right:12px;bottom:-5px}
+ .discovery-ticket-seam{position:relative;flex:none;margin:0 20px;border-top:2px dashed #d6c7a3}
+ .discovery-ticket-seam:before,.discovery-ticket-seam:after{content:"";position:absolute;top:-13px;width:22px;height:22px;background:#f5f3e9;border-radius:50%;box-shadow:inset 0 0 0 1px #e7dab8}
+ .discovery-ticket-seam:before{left:-32px}.discovery-ticket-seam:after{right:-32px}
+ body[data-layout=web] .main[data-page=map] .discovery-side .throw-area{display:flex;flex-direction:column;justify-content:center;gap:9px;flex:1;min-height:0;padding:15px 20px 12px}
+ body[data-layout=web] .main[data-page=map] .discovery-side .dart-range{margin:0}
+ body[data-layout=web] .main[data-page=map] .discovery-side .dart-range strong{font-size:15px;color:#263e4b}
+ body[data-layout=web] .main[data-page=map] .discovery-side .dart-range small{font-size:11px;color:#716852}
+ body[data-layout=web] .main[data-page=map] .discovery-side .dart-range-actions{margin-top:10px;gap:7px}
+ body[data-layout=web] .main[data-page=map] .discovery-side .dart-range-actions button{min-height:39px;border:1px solid #e9dbb5;border-radius:10px;background:#fff9e9;font-size:12px}
+ body[data-layout=web] .main[data-page=map] .discovery-side .throw-button{min-height:55px;border-radius:11px;margin:0;font-size:16px;font-weight:800}
+ body[data-layout=web] .main[data-page=map] .discovery-side .choose-city-entry{min-height:60px;margin:0;border:1px solid #e7dab8;border-radius:11px;background:#fffefa}
+ body[data-layout=web] .main[data-page=map] .discovery-side .ask-anan-entry{min-height:47px;margin:0;border:1px solid #e7dab8;border-radius:11px;background:#fffefa}
+ .discovery-ticket-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:43px;padding:9px 20px;background:#f8edc6;color:#6c5730;font-size:10px;font-weight:700}
+ .ticket-barcode{width:70px;height:22px;flex:none;background:repeating-linear-gradient(90deg,#6c5730 0 2px,transparent 2px 4px,#6c5730 4px 5px,transparent 5px 8px,#6c5730 8px 12px,transparent 12px 15px)}
+ body[data-layout=web] .main[data-page=map] .discovery-side button:focus-visible{outline:3px solid #236e97;outline-offset:2px}
+}
+@media (min-width:900px) and (max-height:760px){
+ .discovery-ticket-head{min-height:34px;padding:5px 18px}
+ .discovery-ticket-route{min-height:75px;padding:9px 18px}
+ .discovery-ticket-route strong{font-size:19px}
+ body[data-layout=web] .main[data-page=map] .discovery-side .welcome{min-height:74px;height:74px;padding:9px 18px}
+ body[data-layout=web] .main[data-page=map] .discovery-side .welcome .hero-title{font-size:20px}
+ body[data-layout=web] .main[data-page=map] .discovery-side .travel-companion{width:75px;height:75px}
+ body[data-layout=web] .main[data-page=map] .discovery-side .throw-area{gap:6px;padding:9px 17px}
+ body[data-layout=web] .main[data-page=map] .discovery-side .dart-range-actions{margin-top:6px}
+ body[data-layout=web] .main[data-page=map] .discovery-side .dart-range-actions button{min-height:34px}
+ body[data-layout=web] .main[data-page=map] .discovery-side .throw-button{min-height:43px}
+ body[data-layout=web] .main[data-page=map] .discovery-side .choose-city-entry{min-height:48px}
+ body[data-layout=web] .main[data-page=map] .discovery-side .ask-anan-entry{min-height:40px}
+ .discovery-ticket-foot{min-height:34px;padding:6px 17px}
+}

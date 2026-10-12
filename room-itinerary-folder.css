@@ -1,0 +1,157 @@
+/* The room itinerary reads as a folder of chronological travel notes. */
+dialog.itinerary-sheet,
+body[data-layout=web] dialog.itinerary-sheet{width:min(1140px,calc(100vw - 32px));max-width:1140px;background:#fffdf6;border:0;border-radius:24px;overflow:hidden}
+.itinerary-sheet #sheet-content{position:relative;background:#fffdf6}
+.itinerary-sheet .sheet-handle{display:none}
+.itinerary-sheet .sheet-header{position:absolute;z-index:5;top:0;left:0;right:0;display:flex;justify-content:flex-end;padding:16px 24px;background:transparent;pointer-events:none}
+.itinerary-sheet .sheet-header h2{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.itinerary-sheet .sheet-header .close-btn{pointer-events:auto;background:#fffdf4;color:#263c4c;box-shadow:0 3px 9px #061c2b24}
+.itinerary-sheet .sheet-body{padding:0 0 28px;background:#fffdf6}
+.itinerary-sheet .sheet-body>.small-note{margin:14px 34px 0;font-size:12px;color:#7a827e}
+.itinerary-sheet .journal-cover{position:relative;min-height:248px;padding:24px 38px 29px;overflow:hidden;background:#263744;color:#fffdf4}
+.itinerary-sheet .journal-cover:after{content:"";position:absolute;right:23%;top:-175px;width:390px;height:390px;border:1px solid #ffffff1b;border-radius:50%;pointer-events:none}
+.itinerary-sheet .journal-back{position:relative;z-index:2;display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:0;color:#fffdf4;font-size:13px;font-weight:700}
+.itinerary-sheet .journal-back svg{width:18px;height:18px}
+.itinerary-sheet .journal-cover-copy{position:relative;z-index:1;max-width:calc(100% - 275px);margin-top:27px}
+.itinerary-sheet .journal-cover-copy h3{margin:0;font-size:clamp(31px,3.2vw,48px);line-height:1.14;letter-spacing:-.035em;color:#fffdf4}
+.itinerary-sheet .journal-cover-copy h3 span{color:#f0d470}
+.itinerary-sheet .journal-cover-copy>p{margin:9px 0 0;font-size:15px;color:#d6e2e5}
+.itinerary-sheet .journal-cover-meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:21px;color:#e3e8e3;font-size:12px;line-height:1.6}
+.itinerary-sheet .journal-cover-meta b{color:#f0d470;margin-right:7px}
+.itinerary-sheet .journal-cover-photo{position:absolute;z-index:2;right:67px;top:34px;width:218px;margin:0;padding:8px 8px 23px;background:#fffdf4;box-shadow:0 14px 23px #091a2559;transform:rotate(6deg)}
+.itinerary-sheet .journal-cover-photo:before{content:"";position:absolute;left:37%;top:-9px;width:53px;height:17px;background:#edcf7dbb;transform:rotate(-8deg)}
+.itinerary-sheet .journal-cover-photo img{display:block;width:100%;height:143px;object-fit:cover}
+.itinerary-sheet .journal-cover-photo figcaption{margin-top:8px;padding-left:3px;color:#3a5468;font-size:10px;font-weight:750;letter-spacing:.07em}
+.itinerary-sheet .journal-cover-placeholder{position:absolute;right:80px;top:67px;color:#f0d470;font-size:36px;font-weight:800;opacity:.8}
+.itinerary-sheet .journal-folder-layers{position:relative;height:28px;background:#dca36c}
+.itinerary-sheet .journal-folder-layers:before,.itinerary-sheet .journal-folder-layers:after{content:"";position:absolute;left:0;right:0;height:24px;clip-path:polygon(0 0,37% 0,39% 58%,100% 58%,100% 100%,0 100%)}
+.itinerary-sheet .journal-folder-layers:before{top:0;background:#ef9474}
+.itinerary-sheet .journal-folder-layers:after{top:10px;background:#f0d06b;clip-path:polygon(0 0,62% 0,64% 58%,100% 58%,100% 100%,0 100%)}
+.itinerary-sheet .journal-layout{display:block;position:relative;margin:-1px 0 0;gap:0;grid-template-columns:none}
+.itinerary-sheet .journal-layout>.day-tabs{position:relative;z-index:2;display:flex;flex-direction:row;width:100%;max-height:none;min-height:59px;margin:0;padding:0 30px;gap:5px;align-items:flex-end;border-bottom:1px solid #e6dfcb;background:#fffdf6;overflow-x:auto}
+.itinerary-sheet .journal-layout>.day-tabs .day-tab{flex:0 0 auto;width:auto;min-width:112px;min-height:47px;margin:0;padding:8px 17px;background:#e9e8df;border:0;border-radius:12px 12px 0 0;color:#666e70;font-size:14px;font-weight:700;white-space:nowrap}
+.itinerary-sheet .journal-layout>.day-tabs .day-tab:nth-child(3n){background:#e3eff4}
+.itinerary-sheet .journal-layout>.day-tabs .day-tab:nth-child(4n){background:#eee1c6}
+.itinerary-sheet .journal-layout>.day-tabs .day-tab.active{min-height:56px;background:#f1d471;color:#263d4d;box-shadow:0 -3px 10px #6260561b}
+.itinerary-sheet .journal-day{padding:24px 34px 8px}
+.itinerary-sheet .journal-day-head{display:flex;align-items:center;gap:16px;min-height:70px;margin-bottom:18px}
+.itinerary-sheet .journal-day-stamp{flex:none;width:61px;height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#efd36d;color:#263d4e;box-shadow:0 3px 8px #84734029;transform:rotate(-3deg)}
+.itinerary-sheet .journal-day-stamp small{font-size:9px;font-weight:800;letter-spacing:.12em}
+.itinerary-sheet .journal-day-stamp strong{font-size:26px;line-height:1.1}
+.itinerary-sheet .journal-day-head h3{margin:0;font-size:24px;line-height:1.25;color:#263d4e}
+.itinerary-sheet .journal-day-head p{margin:5px 0 0;font-size:12px;color:#678094}
+.itinerary-sheet .journal-day .day-route-guide{display:flex;align-items:center;gap:17px;margin:0 0 17px;padding:12px 0;background:transparent;border-top:1px solid #e6dfca;border-bottom:1px solid #e6dfca;border-radius:0}
+.itinerary-sheet .journal-day .day-route-guide h3{flex:none;margin:0;font-size:14px;color:#2e5b72}
+.itinerary-sheet .journal-day .day-route-guide p{flex:1;min-width:0;margin:0;color:#315c72;font-size:13px;line-height:1.5}
+.itinerary-sheet .journal-day .day-route-guide small{display:none}
+.itinerary-sheet .journal-order-head{display:flex;justify-content:space-between;gap:10px;margin-bottom:10px;color:#263d4e;font-size:13px}
+.itinerary-sheet .journal-order-head span{font-size:12px;color:#7b8f98}
+.itinerary-sheet .journal-timeline{position:relative;padding-left:0}
+.itinerary-sheet .journal-timeline:before{content:"";position:absolute;top:27px;bottom:27px;left:77px;width:2px;background:#bbd5df;mask-image:repeating-linear-gradient(to bottom,#000 0 3px,transparent 3px 8px)}
+.itinerary-sheet .journal-entry{position:relative;display:grid;grid-template-columns:111px minmax(0,1fr);gap:9px;align-items:center;margin:0 0 10px;min-height:76px}
+.itinerary-sheet .journal-entry:nth-child(3n+1) .journal-ticket{width:96%;transform:translateX(4px) rotate(-.25deg)}
+.itinerary-sheet .journal-entry:nth-child(3n+2) .journal-ticket{width:93%;transform:translateX(14px) rotate(.3deg)}
+.itinerary-sheet .journal-entry:nth-child(3n) .journal-ticket{width:98%;transform:translateX(2px) rotate(-.25deg)}
+.itinerary-sheet .journal-entry-time{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center;align-self:stretch;color:#27617e;font-size:14px;font-weight:800}
+.itinerary-sheet .journal-entry-time:after{content:"";position:absolute;left:70px;top:calc(50% - 7px);width:12px;height:12px;border:3px solid #fffdf6;border-radius:50%;background:#f0d270;box-shadow:0 0 0 1px #cbb675}
+.itinerary-sheet .journal-entry-time small{font-size:10px;color:#ae8e46;letter-spacing:.08em}
+.itinerary-sheet .journal-ticket{position:relative;min-height:76px;display:flex;align-items:center;gap:13px;padding:13px 15px;background:#fff;box-shadow:0 5px 15px #405b6c14;border-radius:7px}
+.itinerary-sheet .journal-entry:nth-child(4n+1) .journal-ticket{background:#fff9e9}
+.itinerary-sheet .journal-entry:nth-child(4n+3) .journal-ticket{background:#eef5f7}
+.itinerary-sheet .journal-ticket:before{content:"";position:absolute;top:calc(50% - 7px);left:-7px;width:14px;height:14px;border-radius:50%;background:#fffdf6}
+.itinerary-sheet .journal-kind{flex:none;display:grid;place-items:center;width:39px;height:39px;border-radius:9px;background:#f6e9b5;color:#58707a}
+.itinerary-sheet .journal-kind svg{width:20px;height:20px}
+.itinerary-sheet .journal-ticket-copy{flex:1;min-width:0}
+.itinerary-sheet .journal-ticket-copy .place-heading{display:flex;align-items:baseline;flex-wrap:wrap;gap:5px 14px}
+.itinerary-sheet .journal-ticket-copy .place-heading h4{margin:0;font-size:16px;line-height:1.3;color:#263d4e}
+.itinerary-sheet .journal-ticket-copy .place-map-link{font-size:12px;color:#35718d}
+.itinerary-sheet .journal-ticket-copy .card-brief{margin:4px 0 0;color:#657b88;font-size:13px;line-height:1.55}
+.itinerary-sheet .journal-ticket-copy .card-more{margin-top:6px;font-size:12px;color:#5c7180}
+.itinerary-sheet .journal-ticket-copy .compact-transit{margin-top:5px}
+.itinerary-sheet .journal-ticket-copy .compact-transit p{margin:0}
+.itinerary-sheet .journal-ticket-meta{flex:none;min-width:128px;align-self:stretch;display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between;gap:8px;padding-left:11px;border-left:1px dashed #ded9c9;text-align:right}
+.itinerary-sheet .journal-ticket-meta span{font-size:11px;line-height:1.4;color:#9b8059}
+.itinerary-sheet .journal-ticket-meta .card-pencil{position:static;min-width:36px;min-height:36px;color:#33718f}
+.itinerary-sheet .journal-stuck-photo{position:relative;z-index:2;flex:none;width:178px;height:108px;margin:-18px 0 -15px;padding:5px 5px 19px;background:#fff;box-shadow:0 8px 16px #293c4935;transform:rotate(-5deg)}
+.itinerary-sheet .journal-stuck-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.itinerary-sheet .journal-stuck-photo figcaption{position:absolute;left:8px;right:5px;bottom:3px;color:#55758a;font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.itinerary-sheet .journal-stuck-photo:before,.itinerary-sheet .journal-stuck-photo:after{content:"";position:absolute;z-index:2;width:47px;height:17px;background:#e8d5a5bd;box-shadow:0 1px 2px #665c4433}
+.itinerary-sheet .journal-stuck-photo:before{left:-16px;top:0;transform:rotate(-28deg)}
+.itinerary-sheet .journal-stuck-photo:after{right:-17px;bottom:7px;transform:rotate(-31deg)}
+.itinerary-sheet .journal-entry-meal>.journal-ticket{display:block;padding:0}
+.itinerary-sheet .journal-entry-meal .meal-timeline-row{display:block;margin:0}
+.itinerary-sheet .journal-entry-meal .meal-slot{display:none}
+.itinerary-sheet .journal-entry-meal .meal-guide-item{margin:0;padding:14px 17px;background:transparent;border:0;box-shadow:none}
+.itinerary-sheet .journal-entry-meal .meal-guide-title{display:flex;align-items:baseline;gap:12px}
+.itinerary-sheet .journal-entry-meal .meal-guide-title h4{margin:0;font-size:15px}
+.itinerary-sheet .journal-entry-meal .meal-guide-item p{font-size:13px;line-height:1.5}
+.itinerary-sheet .journal-add{margin:12px 0 20px 120px}
+.itinerary-sheet .journal-add .text-button{color:#317190}
+.itinerary-sheet .journal-overview{padding:14px 0;border-block:1px solid #e7e1d2;color:#425d6c}
+.itinerary-sheet .journal-overview summary{min-height:33px;cursor:pointer;font-size:14px;font-weight:700}
+.itinerary-sheet .journal-overview p{margin:8px 0 0;font-size:14px;line-height:1.7}
+.itinerary-sheet .journal-extras{padding-top:10px}
+.itinerary-sheet .journal-empty{padding:18px;color:#637d8a}
+.itinerary-sheet .sheet-footer{position:relative;display:flex;flex-wrap:wrap;gap:9px;padding:15px 26px 20px;background:#fffdf6;border-top:1px solid #e8e1cc}
+.itinerary-sheet .sheet-footer button{min-height:42px}
+.itinerary-sheet #trip-chat{background:#f8f6ed;color:#253d4e}
+.itinerary-sheet .chat-header{padding:21px 18px 9px;gap:12px}
+.itinerary-sheet .chat-header .chat-avatar{display:none}
+.itinerary-sheet .chat-header:before{content:"安";flex:none;display:grid;place-items:center;width:50px;height:50px;border-radius:50%;background:#e9f2f4;border:1px solid #c7d9e1;box-shadow:inset 0 0 0 4px #f7f9f5;color:#315e76;font-size:24px;font-weight:800}
+.itinerary-sheet .chat-context{border-bottom:1px solid #e1dbcc}
+.itinerary-sheet .chat-welcome{position:relative;margin-top:24px;padding:17px 15px;background:#fffdf6;box-shadow:0 5px 16px #59687617;transform:rotate(.5deg)}
+.itinerary-sheet .chat-welcome:before{content:"";position:absolute;top:-6px;left:calc(50% - 24px);width:48px;height:12px;background:#e3d5a5}
+.itinerary-sheet .chat-welcome button{border:0;border-top:1px solid #e9e5db;border-radius:0;background:transparent;color:#346c86;font-size:13px;min-height:42px;margin:0;padding:10px 0}
+.itinerary-sheet .chat-form{background:#f8f6ed}
+.itinerary-sheet .chat-form textarea{background:#fffefb;border-color:#c9d6da}
+.itinerary-sheet .chat-form button{background:#efd36e;color:#293f4e}
+@media(min-width:1100px){
+ .itinerary-sheet.with-trip-chat[open],body[data-layout=web] dialog.itinerary-sheet.with-trip-chat[open]{grid-template-columns:minmax(0,1fr) 304px;width:min(1480px,calc(100vw - 40px));max-width:1480px;height:92dvh;max-height:1100px}
+ .itinerary-sheet.with-trip-chat>#trip-chat{border-left:1px solid #e4decf}
+}
+@media(max-width:1099px){
+ .itinerary-sheet .journal-cover{min-height:230px}
+ .itinerary-sheet .journal-cover-copy{max-width:calc(100% - 250px)}
+}
+@media(max-width:700px){
+ dialog.itinerary-sheet,body[data-layout=web] dialog.itinerary-sheet{width:100vw;max-width:100vw;height:100dvh;max-height:100dvh;border-radius:0}
+ .itinerary-sheet .journal-cover{min-height:221px;padding:18px 17px 23px}
+ .itinerary-sheet .journal-cover-copy{max-width:100%;margin-top:24px}
+ .itinerary-sheet .journal-cover-copy h3{max-width:calc(100% - 110px);font-size:26px}
+ .itinerary-sheet .journal-cover-copy>p{font-size:13px}
+ .itinerary-sheet .journal-cover-meta{gap:4px 14px;margin-top:17px;font-size:11px}
+ .itinerary-sheet .journal-cover-meta span{display:block;flex-basis:100%}
+ .itinerary-sheet .journal-cover-photo{right:16px;top:62px;width:95px;padding:4px 4px 14px}
+ .itinerary-sheet .journal-cover-photo img{height:75px}
+ .itinerary-sheet .journal-cover-photo figcaption{font-size:6px;margin-top:3px}
+ .itinerary-sheet .journal-folder-layers{height:20px}
+ .itinerary-sheet .journal-layout>.day-tabs{padding:0 13px;min-height:55px}
+ .itinerary-sheet .journal-layout>.day-tabs .day-tab{min-width:91px;font-size:12px;min-height:43px;padding:8px 10px}
+ .itinerary-sheet .journal-layout>.day-tabs .day-tab.active{min-height:51px}
+ .itinerary-sheet .journal-day{padding:18px 15px 10px}
+ .itinerary-sheet .journal-day-head{gap:12px;margin-bottom:15px}
+ .itinerary-sheet .journal-day-stamp{width:49px;height:54px}
+ .itinerary-sheet .journal-day-stamp strong{font-size:22px}
+ .itinerary-sheet .journal-day-head h3{font-size:19px}
+ .itinerary-sheet .journal-day .day-route-guide{display:block;padding:11px 0}
+ .itinerary-sheet .journal-day .day-route-guide h3{margin-bottom:5px}
+ .itinerary-sheet .journal-order-head span{display:none}
+ .itinerary-sheet .journal-timeline:before{left:52px}
+ .itinerary-sheet .journal-entry{grid-template-columns:63px minmax(0,1fr);gap:3px}
+ .itinerary-sheet .journal-entry-time{font-size:12px}
+ .itinerary-sheet .journal-entry-time:after{left:45px}
+ .itinerary-sheet .journal-ticket{display:grid;grid-template-columns:32px minmax(0,1fr);gap:8px;padding:11px 10px}
+ .itinerary-sheet .journal-entry:nth-child(n) .journal-ticket{width:100%;transform:none}
+ .itinerary-sheet .journal-kind{width:30px;height:30px}
+ .itinerary-sheet .journal-kind svg{width:17px;height:17px}
+ .itinerary-sheet .journal-ticket-copy .place-heading h4{font-size:14px}
+ .itinerary-sheet .journal-ticket-copy .card-brief{font-size:12px}
+ .itinerary-sheet .journal-ticket-meta{grid-column:1/-1;min-width:0;flex-direction:row;align-items:center;border-left:0;border-top:1px dashed #ded9c9;padding:7px 0 0;text-align:left}
+ .itinerary-sheet .journal-ticket-meta .card-pencil{min-width:38px}
+ .itinerary-sheet .journal-stuck-photo{grid-column:2;width:150px;height:96px;margin:1px 0 9px 5px}
+ .itinerary-sheet .journal-entry-meal>.journal-ticket{display:block}
+ .itinerary-sheet .journal-add{margin-left:66px}
+ .itinerary-sheet .sheet-body>.small-note{margin:12px 15px 0}
+ .itinerary-sheet .sheet-footer{padding:12px 15px calc(18px + env(safe-area-inset-bottom,0px))}
+}
+@media(prefers-reduced-motion:reduce){.itinerary-sheet .journal-ticket{transition:none}}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6df83">
+  <meta name="description" content="扔个飞镖，发现下一站。把心动的城市放入候选，和朋友一起安排一个好周末。">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>下一站 · 飞镖旅行</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23efd36c'/%3E%3Cpath d='M8 8L25 14L17 17L14 25Z' fill='%235d4b20'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="desktop.css">
+  <link rel="stylesheet" href="cream.css">
+  <link rel="stylesheet" href="room-design.css">
+  <script defer src="assets/d3.min.js"></script>
+  <script defer src="assets/lucide.min.js"></script>
+  <script defer src="data.js"></script>
+  <script defer src="assets/china-data.js"></script>
+  <script defer src="frontend-demo.js"></script>
+  <script defer src="assets/city-directory.js"></script>
+  <script defer src="assets/city-highlights-data.js"></script>
+  <script defer src="dart-picker.js"></script>
+  <script defer src="itinerary-details.js"></script>
+  <script defer src="plan-state.js"></script>
+  <script defer src="plan-features.js"></script>
+  <script defer src="room-tools.js"></script>
+  <script defer src="rooms.js"></script>
+  <script defer src="city-highlights.js"></script>
+  <script defer src="trip-chat.js"></script>
+  <script defer src="app.js?v=portfolio-home-1"></script>
+  <link rel="stylesheet" href="room-tools.css">
+  <link rel="stylesheet" href="room-tool-objects.css">
+  <link rel="stylesheet" href="room-tool-empty.css">
+  <link rel="stylesheet" href="room-ledger-compact.css">
+  <link rel="stylesheet" href="room-lobby.css">
+  <link rel="stylesheet" href="room-plan-label.css">
+  <link rel="stylesheet" href="room-member-stamps.css">
+  <link rel="stylesheet" href="room-candidate-refresh.css">
+  <link rel="stylesheet" href="room-itinerary-folder.css">
+  <link rel="stylesheet" href="room-vote-ticket.css">
+  <link rel="stylesheet" href="personal-journal.css">
+  <link rel="stylesheet" href="room-invite.css">
+  <link rel="stylesheet" href="travel-forms.css">
+  <link rel="stylesheet" href="boarding-pass.css">
+  <link rel="stylesheet" href="frontend-demo.css">
+</head>
+<body>
+  <p class="frontend-demo-banner">纯前端演示 · 数据仅保存在当前浏览器 · 推荐与房间使用本地示例</p>
+  <div class="phone">
+    <header class="app-header">
+      <button class="brand" data-action="navigate" data-value="map" aria-label="下一站，返回地图"><span class="brand-mark"><i data-lucide="navigation"></i></span><span>下一站</span></button>
+      <div class="header-right"><button class="demo-badge" data-action="about">本地演示</button><button class="friends-btn" data-action="friends"><i data-lucide="users-round"></i><span id="group-label">房间演示</span></button></div>
+    </header>
+    <main id="main" class="main" tabindex="-1"></main>
+    <nav class="tabbar" aria-label="主导航">
+      <button data-action="navigate" data-value="map" class="tab active" aria-current="page"><i data-lucide="compass"></i><span>地图选城</span></button>
+      <button data-action="navigate" data-value="pool" class="tab"><span class="nav-icon"><i data-lucide="heart"></i><b id="pool-count" hidden>0</b></span><span>候选城市</span></button>
+      <button data-action="navigate" data-value="plan" class="tab"><i data-lucide="route"></i><span>我的行程</span></button>
+    </nav>
+  </div>
+  <dialog id="sheet" aria-labelledby="sheet-title"><div id="sheet-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>请启用 JavaScript 以体验飞镖选城和行程编辑。</noscript>
+</body>
+</html>

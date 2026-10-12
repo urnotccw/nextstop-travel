@@ -1,0 +1,98 @@
+{
+  "errors": [],
+  "externalRequests": [],
+  "checks": [
+    {
+      "name": "map",
+      "paths": 43
+    },
+    {
+      "name": "城市投票在本地保存",
+      "passed": true
+    },
+    {
+      "name": "卡片上的下一站切换",
+      "passed": true
+    },
+    {
+      "name": "偏好保存与候选更新",
+      "passed": true
+    },
+    {
+      "name": "房间设置昵称保存",
+      "passed": true
+    },
+    {
+      "name": "清单新增",
+      "passed": true
+    },
+    {
+      "name": "清单完成状态",
+      "passed": true
+    },
+    {
+      "name": "房间行程编辑与版本更新",
+      "passed": true
+    },
+    {
+      "name": "房间账单记录与参与人数",
+      "passed": true
+    },
+    {
+      "name": "结算按分计算且余额守恒",
+      "passed": true
+    },
+    {
+      "name": "邀请明确为本地演示",
+      "passed": true
+    },
+    {
+      "name": "个人行程可编辑",
+      "passed": true
+    },
+    {
+      "name": "个人花费总额与人均计算",
+      "passed": true
+    },
+    {
+      "name": "费用说明不伪装成在线查价",
+      "passed": true
+    },
+    {
+      "name": "省份偏好入口",
+      "passed": true
+    },
+    {
+      "name": "刷新后本地数据保留",
+      "passed": true
+    },
+    {
+      "name": "示例安排遵守天数与到离时段",
+      "passed": true
+    },
+    {
+      "name": "未收录城市使用占位草稿",
+      "passed": true
+    },
+    {
+      "name": "对话声明为固定本地示例",
+      "passed": true
+    },
+    {
+      "name": "多文件源码直接打开显示地图",
+      "passed": true
+    },
+    {
+      "name": "单文件原型直接打开显示地图",
+      "passed": true
+    },
+    {
+      "name": "单文件行程可进入",
+      "passed": true
+    },
+    {
+      "name": "单文件可见图片全部加载",
+      "passed": true
+    }
+  ]
+}
