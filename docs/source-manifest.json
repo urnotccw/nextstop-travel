@@ -1,5 +1,5 @@
 {
-  "note": "原始纯前端交付的运行文件校验，不包含后加交接文档。",
+  "note": "纯前端运行文件校验；已补齐房间票券通过动态路径使用的两张原版图片。",
   "files": [
     {
       "path": "app.js",
@@ -485,6 +485,16 @@
       "path": "trip-chat.js",
       "bytes": 15419,
       "sha256": "a964e304c03da60f1526b9891905f86a076011f9f3de12e9f0cf05681146831b"
+    },
+    {
+      "path": "assets/room-ticket-camera.png",
+      "bytes": 2742477,
+      "sha256": "39da1b47be98ef0fbb8e264495dd688e64e71f67d1337b5b51062bfda5ba04bd"
+    },
+    {
+      "path": "assets/room-ticket-suitcase.png",
+      "bytes": 2890064,
+      "sha256": "71e6150311f0d2b540f7095ad28eb2f9496f0fa2dfdd4abca0ff56a0a8e6254c"
     }
   ]
 }

@@ -2,6 +2,8 @@
 
 ## 正确下载
 
+若无法下载或解压 ZIP，改读 [IMPORT-WITHOUT-ZIP.md](IMPORT-WITHOUT-ZIP.md)，通过原始文件链接逐个导入；也提供可编辑单文件 HTML。
+
 指定分支：`frontend-redcowork`，不要下载默认 `main` 分支。
 
 源码 ZIP：

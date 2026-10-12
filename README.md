@@ -4,6 +4,8 @@
 
 **请使用 `frontend-redcowork` 分支。仓库 `main` 是历史完整版，不是本次纯前端交付。**
 
+**不能下载 ZIP？** 先看 [免 ZIP 导入说明](IMPORT-WITHOUT-ZIP.md)。可通过 [FILES.json](FILES.json) 逐文件获取，也可以保存 [可编辑单文件 HTML](https://raw.githubusercontent.com/urnotccw/nextstop-travel/refs/heads/frontend-redcowork/editable-single-file.html)。单文件的图片、字体使用公开静态链接；需要全部本地保存时使用文件清单。
+
 - [下载这份纯前端源码 ZIP](https://github.com/urnotccw/nextstop-travel/archive/refs/heads/frontend-redcowork.zip)
 - [直接下载地址（codeload）](https://codeload.github.com/urnotccw/nextstop-travel/zip/refs/heads/frontend-redcowork)
 - [给 REDcowork 的执行说明](START-HERE.md)
